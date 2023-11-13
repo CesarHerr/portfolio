@@ -1,0 +1,20 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.leftSide {
+  width: 63%;
+}
+
+.rightSide {
+  width: 32%;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
