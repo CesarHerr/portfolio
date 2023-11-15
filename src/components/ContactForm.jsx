@@ -1,7 +1,7 @@
 function ContactForm() {
   return (
     <section className="flex justify-center items-center h-screen
-     leftSide relative" id="contactForm">
+    leftSide relative" id="contactForm">
       <h2 className="absolute top-4 text-6xl font-bold">Contact</h2>
 
       <form className="w-8/12">
