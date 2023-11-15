@@ -2,8 +2,8 @@ import carpet from '../assets/carpet.png';
 
 function Projects() {
   return(
-    <section className="flex flex-col justify-center items-center h-screen
-     gap-4 leftSide relative font-bold" 
+    <section className="flex flex-col justify-end items-center h-screen
+     gap-4 leftSide relative font-bold bg-green-300" 
     id="computer">
       <h2 className="text-6xl absolute top-2" id="projects">Projects</h2>
         <div className="flex justify-center items-center w-full gap-10">
