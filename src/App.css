@@ -10,11 +10,81 @@
 .rightSide {
   width: 32%;
 }
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.computer {
+  position: relative;
+  background-image: url("./assets/desktopFull2.png"); 
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 60rem;
+  width: 46rem;
+
+  & .light {
+    position:absolute;
+    right: 5rem;
+    width: 55%;
+    margin-top: 13rem;
+    border-left: 12rem solid transparent;
+    border-right: 9rem solid transparent;
+    border-bottom: 23rem solid rgba(255, 228, 196, 0.192);
   }
-  to {
-    transform: rotate(360deg);
+
+  & .computer__screen {
+    width: 10rem;
+    height: 7rem;
+    position: absolute;
+    overflow: hidden;
+    top: 26rem;
+    left: 16.7rem;
+    z-index: -1;
+
+    & .giphy-embed {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(2.8);
+      transform-origin: center center;
+    }
+  }
+
+  & .computer__zed {
+    position: absolute;
+    left: 10rem;
+    top: 28rem;
+    width: 3rem;
+    height: 3rem;
+    animation: sleeping 4s linear infinite;
+  }
+
+  & .computer__tail {
+    position: absolute;
+    left: 0rem;
+    top: 33.2rem;
+    animation: moveTail 2s linear infinite;
+  }
+}
+
+@keyframes moveTail {
+  0% {
+    transform: rotate(-30);
+  }
+  50% {
+    transform: rotate(5deg) translateX(-0.3rem);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes sleeping {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4, 1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
