@@ -1,14 +1,17 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 .leftSide {
-  width: 63%;
+  right: 0;
+  width: 65%;
+  margin-left: 35%;
 }
 
 .rightSide {
-  width: 32%;
+  width: 25%;
 }
 
 .computer {
@@ -17,10 +20,10 @@
   background-size:cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 60rem;
-  width: 46rem;
+  height: 50rem;
+  width: 36rem;
 
-  & .light {
+  /* & .light {
     position:absolute;
     right: 5rem;
     width: 55%;
@@ -28,7 +31,7 @@
     border-left: 12rem solid transparent;
     border-right: 9rem solid transparent;
     border-bottom: 23rem solid rgba(255, 228, 196, 0.192);
-  }
+  } */
 
   & .computer__screen {
     width: 10rem;
@@ -50,8 +53,8 @@
 
   & .computer__zed {
     position: absolute;
-    left: 10rem;
-    top: 28rem;
+    left: 6rem;
+    top: 23rem;
     width: 3rem;
     height: 3rem;
     animation: sleeping 4s linear infinite;
@@ -59,8 +62,8 @@
 
   & .computer__tail {
     position: absolute;
-    left: 0rem;
-    top: 33.2rem;
+    left: -1.7rem;
+    top: 27.8rem;
     animation: moveTail 2s linear infinite;
   }
 }
