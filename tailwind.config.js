@@ -19,6 +19,7 @@ export default {
         myPurple: '#AE8FDB',
         myBlue: '#4C3A69',
         myYellow: '#FEF8B4',
+        myHoverButton: '#d4cc95',
         myGray: '#404040',
         myGreen: '#6FDCBF',
         myBrown: '#29272A',
