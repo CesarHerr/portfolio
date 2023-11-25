@@ -1,0 +1,8 @@
+.win .square {
+  font-size: 5rem;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+  border-color: transparent;
+  margin: 0 auto;
+}
