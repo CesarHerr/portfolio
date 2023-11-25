@@ -1,0 +1,21 @@
+{
+  "name": "My Portfolio",
+  "short_name": "MyApp",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#6FDCBF",
+  "theme_color": "#6FDCBF",
+  "icons": [
+    {
+      "src": "/ vite.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/src/assets/myAvatar2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
