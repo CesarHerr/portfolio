@@ -133,11 +133,11 @@
 
   .active {
     background-size: 100% 100%;
-    transform: translateX(5rem) scale(1.2);
+    transform: scale(1.2);
   }
 
   .reverse {
     background-size: 0% 100%;
-    transform: translateX(0) scale(1);
+    transform: scale(1);
   }
 }
