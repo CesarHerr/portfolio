@@ -9,7 +9,7 @@
   width: 60%;
 } */
 
-  /* & .light {
+/* & .light {
     position:absolute;
     right: 5rem;
     width: 55%;
@@ -113,9 +113,9 @@
   }
 }
 
-
 @media (min-width: 1280px) {
-  .animatedBack, .animatedOut {
+  .animatedBack,
+  .animatedOut {
     background-image:
       linear-gradient(
         transparent 50%,

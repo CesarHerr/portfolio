@@ -34,11 +34,11 @@
 @media (min-width: 768px) {
   .slider {
     width: 21rem;
-  }  
+  }
 }
 
 @media (min-width: 1280px) {
   .slider {
     width: 30rem;
-  }  
+  }
 }

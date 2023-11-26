@@ -22,7 +22,7 @@ function ContactForm() {
       <form ref={refContact} className="w-10/12 max-w-md mx-auto" action="https://formspree.io/f/myyanyge" method="POST" target="_blank">
 
         <div className={`relative z-0 w-full mb-10 group ${inViewContactName ? 'moveLeft' : ''}`} ref={refContactName}>
-          <input type="text" name="floating_name" className="block py-2.5 px-0 w-full text-lg text-myGray pl-2
+          <input type="text" name="floating_name" id="floating_name" className="block py-2.5 px-0 w-full text-lg text-myGray pl-2
           bg-transparent border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-myPurple peer" placeholder=" " required />
           
           <label htmlFor="floating_name" className="peer-focus:font-medium absolute text-myGray dark:text-gray-400 duration-300 
@@ -32,7 +32,7 @@ function ContactForm() {
         </div>
 
         <div className={`relative z-0 w-full mb-5 group ${inViewContactEmail ? 'moveRight' : ''}`} ref={refContactEmail}>
-          <input type="email" name="floating_email" className="block py-2.5 px-0 w-full text-lg text-myGray pl-2
+          <input type="email" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-lg text-myGray pl-2
           bg-transparent border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-myPurple peer" placeholder=" " required />
           
           <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-myGray dark:text-gray-400 duration-300
@@ -42,7 +42,7 @@ function ContactForm() {
         </div>
         
         <div ref={refContactMessage} className="">
-          <textarea rows="4" className={`block p-2.5 w-full text-lg text-myGray bg-myYellow rounded-lg border
+          <textarea rows="4" name="textarea" className={`block p-2.5 w-full text-lg text-myGray bg-myYellow rounded-lg border
           border-gray-300 focus:ring-blue-500 focus:border-blue-500 ${inViewContactMessage ? 'moveBottom' : 'opacity-0'}`}
           placeholder="Leave a comment..." aria-label="write me"></textarea>
 

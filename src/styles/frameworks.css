@@ -1,4 +1,4 @@
- @keyframes scrollB {
+@keyframes scrollB {
   100% { transform: translateX(0); }
   0% { transform: translateX(calc(-330px * 5)); }
 }
@@ -35,5 +35,5 @@
 @media (min-width: 1280px) {
   .sliderB {
     width: 40rem;
-  }  
+  }
 }

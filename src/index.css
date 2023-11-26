@@ -23,42 +23,36 @@
   font-family: "Mosk";
   font-weight: 300;
   src: url('./fonts/Mosk-Light-300.ttf') format('truetype');
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Mosk";
   font-weight: 400;
   src: url('./fonts/Mosk-Normal-400.ttf') format('truetype');
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Mosk";
   font-weight: 600;
   src: url('./fonts/Mosk-Semi-Bold-600.ttf') format('truetype');
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Mosk";
   font-weight: 700;
   src: url('./fonts/Mosk-Bold-700.ttf') format('truetype');
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Mosk";
   font-weight: 800;
   src: url('./fonts/Mosk-Extra-Bold-800.ttf') format('truetype');
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Mosk";
   font-weight: 500;
   src: url('./fonts/Mosk-Medium-500.ttf') format('truetype');
-  font-display: swap;
 }
 
 svg {
@@ -71,7 +65,7 @@ svg {
     color: #213547;
     background-color: #fff;
   }
-  
+
   button {
     background-color: #f9f9f9;
   }

@@ -5,7 +5,6 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import ContactForm from './components/ContactForm';
 import Popup from './components/Popup';
-import TicTacToe from './components/TicTacToe';
 import About from './components/About';
 
 function App() {
