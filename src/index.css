@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  font-family: Mosk, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #6fdcbf;
+  color: #404040;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,15 +59,6 @@
   font-weight: 500;
   src: url('./fonts/Mosk-Medium-500.ttf') format('truetype');
   font-display: swap;
-}
-
-:root {
-  font-family: Mosk, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-size: 1.1rem;
-  font-weight: 600;
-  background-color: #6fdcbf;
-  color: #404040;
 }
 
 svg {
