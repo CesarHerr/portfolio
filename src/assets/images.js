@@ -13,6 +13,7 @@ import rfad2 from './rfad2.webp';
 import space from './space.webp';
 import x from './x.png';
 import zelda from './zelda.webp';
+import post from './post.webp';
 
 const images = {
   carpet,
@@ -30,6 +31,7 @@ const images = {
   space,
   x,
   zelda,
+  post,
 };
 
 
