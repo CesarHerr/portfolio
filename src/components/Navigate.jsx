@@ -12,11 +12,11 @@ function Navigate() {
   return (
     <aside
       className="flex flex-col w-full md:w-[20rem] xl:w-[25rem] items-start justify-center gap-5 
-      md:fixed h-screen bg-myYellow z-10 relative overflow-hidden"
+      md:fixed h-screen bg-myYellow z-10 relative overflow-hidden md:mx-auto"
     >
       <header
-        className="flex justify-center items-center ml-5 w-full max-w-[400px] top-2 md:flex-col md:justify-center 
-      gap-0 md:ml-10"
+        className="flex justify-center items-center ml-5 max-w-[400px] top-2 md:flex-col md:items-end 
+      gap-0 md:ml-10 w-full sm:w-auto"
       >
         <div className="min-w-[250px] relative z-20">
           <h1 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full animation">
@@ -29,7 +29,7 @@ function Navigate() {
         <img
           src={images.myAvatar}
           alt="avatar"
-          className="w-36 h-36 rounded-full border-4 border-myGray
+          className="w-24 h-24 md:w-36 md:h-36 rounded-full border-4 border-myGray
           bg-myPurple z-0 relative right-8 md:right-auto"
         />
       </header>

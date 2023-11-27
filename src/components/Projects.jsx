@@ -45,7 +45,7 @@ function Projects() {
           Projects
         </h2>
       </span>
-      <div>
+      <div className="w-full">
         <div
           ref={refA}
           className="flex flex-col-reverse lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
