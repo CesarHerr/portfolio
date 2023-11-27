@@ -8,19 +8,16 @@ function Navigate() {
   const { onProject, onAbout, onSkills, onContact } = useSelector((state) => state.project);
 
   return (
-    <aside className="flex flex-col w-full md:w-[20%] xl:w-[24%] items-start justify-center gap-20 md:justify-between pt-14 md:pt-24 
-      md:fixed h-screen bg-myYellow min-w-[330px] z-30 overflow-hidden md:overflow-visible">
-      <header className="flex justify-start items-end ml-10 md:ml-14 w-full max-w-[400px] relative top-2">
-        <div className="min-w-[350px] relative z-30 mb-10 lg:mb-0">
+    <aside className="flex flex-col w-full md:w-[20%] xl:w-[30%] items-start justify-center gap-5 
+      md:fixed h-screen bg-myYellow min-w-[330px] z-10 relative">
+      <header className="flex justify-start items-end ml-10 w-full max-w-[400px] relative top-2 md:flex-col md:justify-center 
+      md:gap-0 md:ml-10 md:items-center">
+        <div className="min-w-[250px] relative z-20">
           <h1 className="text-left text-5xl xl:text-6xl 2xl:text-7xl font-dancing font-bold -rotate-12 w-full animation">Hey There.</h1>
-          <h2 className="text-left text-5xl xl:text-6xl 2xl:text-7xl font-dancing font-bold -rotate-12 mb-14 w-full">I&apos;m César.</h2>
+          <h2 className="text-left text-5xl xl:text-6xl 2xl:text-7xl font-dancing font-bold -rotate-12 mb-7 w-full">I&apos;m César.</h2>
         </div>
-        <div className="w-36 h-36 2xl:w-48 2xl:h-48 absolute top-32 right-24 md:right-14 2xl:relative 
-          2xl:right-32 2xl:top-32 z-0 ">
-          <img src={images.myAvatar} alt="avatar" className=" w-36 h-36 2xl:w-48 2xl:h-48 absolute rounded-full
-          bg-myPurple z-0 max-w-[162px] 2xl:max-w-[232px]"/>
-          <div className="w-36 h-36 2xl:w-48 2xl:h-48 absolute rounded-full border-4 border-myYellow z-10"></div>
-        </div>
+        <img src={images.myAvatar} alt="avatar" className="w-36 h-36 rounded-full border-4 border-myGray
+         bg-myPurple z-0"/>
       </header>
       <section>
       <h3 className="text-left text-2xl pt-5 w-10/12 ml-10 text-myBlue md:hidden">I&apos;m a Full Stack Developer</h3>
@@ -42,7 +39,7 @@ function Navigate() {
             <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3"/> Contact</a>
         </nav>
       </section>
-      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:relative bottom-2 md:bottom-auto right-2 md:right-auto bg-myGray rounded">
+      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-2 md:right-auto bg-myGray rounded">
         <a className="cursor-pointer hover:scale-110" href="https://twitter.com/Cesarherr2" target="_blank" rel="noreferrer" aria-label="go to my twitter account">
           <RiTwitterXLine className=" hover:text-purple-800 w-5 md:w-10 text-white"/>
         </a>
