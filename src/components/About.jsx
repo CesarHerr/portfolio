@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       className="h-screen relative hidden items-end gap-2 pr-4 md:inline xl:pr-20
-      md:ml-[20%] xl:ml-[30%] mb-24 overflow-hidden bg-green-300"
+      md:ml-[20%] xl:ml-[30%] mb-24 overflow-hidden"
       id="about"
     >
       <h3 className="w-9/12 text-left ml-[25%] text-3xl lg:text-4xl mt-64 text-myBlue">
@@ -19,7 +19,7 @@ function About() {
         git-flow, and daily stand ups to communicate and collaborate with
         international remote developers.
       </p>
-      <div className="w-[210px] h-[260px] opacity-80 2xl:pt-16 absolute right-4">
+      <div className="w-[210px] h-[260px] opacity-80 2xl:pt-16 absolute right-20">
         <img
           src={images.post}
           className="w-[210px] h-[220px] rotate-6 absolute -z-10"

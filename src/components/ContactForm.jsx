@@ -17,12 +17,12 @@ function ContactForm() {
 
   return (
     <section
-      className="grid overflow-hidden h-screen leftSide md:ml-[43%] lg:ml-[40%] xl:ml-[35%] 2xl:ml-[45%]"
+      className="grid overflow-hidden h-screen leftSide md:ml-[20%] xl:ml-[30%]"
       id="contactForm"
     >
       <h2
         ref={ref}
-        className={`text-4xl md:text-6xl font-bold mt-14 ${
+        className={`text-4xl md:text-5xl font-bold mt-14 ${
           inView ? 'titleAnimation' : ''
         }`}
       >
@@ -54,9 +54,9 @@ function ContactForm() {
 
           <label
             htmlFor="floating_name"
-            className="peer-focus:font-medium absolute text-myGray dark:text-gray-400 duration-300 
+            className="peer-focus:font-medium absolute text-myGray dark:text-myGray duration-300 
           transform -translate-y-9 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto
-          peer-focus:text-blue-600 peer-focus:dark:text-myPurple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:text-myBlue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
             peer-focus:scale-75 peer-focus:-translate-y-9"
           >
             Name{' '}
@@ -81,9 +81,9 @@ function ContactForm() {
 
           <label
             htmlFor="floating_email"
-            className="peer-focus:font-medium absolute text-myGray dark:text-gray-400 duration-300
+            className="peer-focus:font-medium absolute text-myGray dark:text-myGray duration-300
           transform -translate-y-9 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto
-          peer-focus:text-blue-600 peer-focus:dark:text-myPurple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:text-myBlue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
             peer-focus:scale-75 peer-focus:-translate-y-9"
           >
             Email address

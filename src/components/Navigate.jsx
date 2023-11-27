@@ -96,7 +96,7 @@ function Navigate() {
           </a>
         </nav>
       </section>
-      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-2 md:right-auto bg-myGray rounded">
+      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-2 md:bottom-0 md:right-auto bg-myGray rounded">
         <a
           className="cursor-pointer hover:scale-110"
           href="https://twitter.com/Cesarherr2"
