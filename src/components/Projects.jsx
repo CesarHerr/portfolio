@@ -64,7 +64,7 @@ function Projects() {
             <img
               src={images.rfad2}
               alt="rent for a day"
-              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
+              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <img
               src={images.carpet}
@@ -123,7 +123,7 @@ function Projects() {
             <img
               src={images.paids}
               alt="paid ups"
-              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
+              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
@@ -155,7 +155,7 @@ function Projects() {
             <img
               src={images.recipe}
               alt="recipe app"
-              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
+              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
@@ -213,7 +213,7 @@ function Projects() {
             <img
               src={images.zelda}
               alt="bow encyclopedia"
-              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
+              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
@@ -246,7 +246,7 @@ function Projects() {
             <img
               src={images.space}
               alt="space web"
-              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
+              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
@@ -303,7 +303,7 @@ function Projects() {
             <img
               src={images.hiking}
               alt="adventure sports web"
-              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
+              className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
