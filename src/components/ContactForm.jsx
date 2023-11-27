@@ -16,7 +16,7 @@ function ContactForm() {
   }, [inViewContact, dispatch]);
 
   return (
-    <section className="grid  h-screen leftSide md:ml-[43%] lg:ml-[40%] xl:ml-[35%] 2xl:ml-[45%]" id="contactForm">
+    <section className="grid overflow-hidden h-screen leftSide md:ml-[43%] lg:ml-[40%] xl:ml-[35%] 2xl:ml-[45%]" id="contactForm">
       <h2 ref={ref} className={`text-4xl md:text-6xl font-bold mt-14 ${inView ? 'titleAnimation' : ''}`}>Contact</h2>
 
       <form ref={refContact} className="w-10/12 max-w-md mx-auto" action="https://formspree.io/f/myyanyge" method="POST" target="_blank">

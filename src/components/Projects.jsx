@@ -30,7 +30,7 @@ function Projects() {
   
   return(
     <section className="flex flex-col gap-8 items-center lg:w-[65%] md:w-[55%]
-      relative mb-28 md:ml-[44%] lg:ml-[35%] 2xl:ml-[40%]" id="projects" >
+      relative pb-28 md:ml-[44%] lg:ml-[35%] 2xl:ml-[40%] overflow-hidden " id="projects" >
       <span ref={refProjectTitle} >
         <h2 className={`container text-center my-10 md:my-14 text-4xl md:text-6xl font-bold ${inViewProjectTitle ? 'titleAnimation' : 'hidden'}`}>Projects</h2>
       </span>

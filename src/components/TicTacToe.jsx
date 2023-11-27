@@ -123,7 +123,7 @@ function TicTacToe() {
   }, [inViewAbout, dispatch]);
 
   return (
-    <section className="w-fit mx-auto" id="playGround">
+    <section className="w-fit mx-auto overflow-hidden" id="playGround">
       <div ref={refAbout} className="flex mt-10 justify-center">
         <div className="flex justify-center gap-2 w-full">
           <p className="text-xs font-bold text-myBlue -rotate-12 animate-pulse curs">It&apos;s your turn !</p>

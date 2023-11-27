@@ -66,7 +66,7 @@ const handleClick = () => {
   return (
     <>
       {allProjects[project] && (
-      <section className="fixed w-full h-full grid place-items-center bg-myGreen z-50 left-0">
+      <section className="fixed w-full h-full grid place-items-center bg-myGreen z-50 left-0 overflow-hidden">
         <div className="popup w-11/12 md:w-9/12 h-[85%] md:h-[80%] xl:h-[75%] bg-myYellow flex flex-col rounded-xl md:items-center shadow-myShadow">
           <h2 className="pt-10 lg:py-3 hidden lg:inline xl:py-7 text-3xl xl:text-5xl font-dancing font-bold">{allProjects[project].name}</h2>
           <button type="button" className="absolute right-2 top-2 xl:right-10 xl:top-6 text-2xl xl:text-5xl  hover:scale-125 transition duration-300"

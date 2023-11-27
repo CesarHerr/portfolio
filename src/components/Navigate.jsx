@@ -9,7 +9,7 @@ function Navigate() {
 
   return (
     <aside className="flex flex-col w-full md:w-[20%] xl:w-[24%] items-start justify-center gap-20 md:justify-between pt-14 md:pt-24 
-      md:fixed h-screen bg-myYellow min-w-[330px] z-30">
+      md:fixed h-screen bg-myYellow min-w-[330px] z-30 overflow-hidden md:overflow-visible">
       <header className="flex justify-start items-end ml-10 md:ml-14 w-full max-w-[400px] relative top-2">
         <div className="min-w-[350px] relative z-30 mb-10 lg:mb-0">
           <h1 className="text-left text-5xl xl:text-6xl 2xl:text-7xl font-dancing font-bold -rotate-12 w-full animation">Hey There.</h1>
@@ -49,7 +49,7 @@ function Navigate() {
         <a className="cursor-pointer hover:scale-110" href="https://www.linkedin.com/in/cesarherr/" target="_blank" rel="noreferrer" aria-label="go to my linkedin account">
           <FaLinkedinIn className=" hover:text-purple-800 w-5 md:w-10 text-white" />
         </a>
-        <a className="cursor-pointer hover:scale-110" href="https://github.com/CesarHerr" target="_blank" rel="noreferrer" aria-label="go to my github account">
+        <a className="cursor-pointer hover:scale-110" href="https://cesarherr.github.io/portfolio_1.2/" target="_blank" rel="noreferrer" aria-label="go to my github account">
           <FiGithub className=" hover:text-purple-800 w-5 md:w-10 text-white" />
         </a>
       </footer>
