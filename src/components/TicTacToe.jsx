@@ -146,7 +146,7 @@ function TicTacToe() {
         <Square isSelected={turn === turns.O}>{turns.O}</Square>
       </div>
       {winner !== null && (
-        <div className="fixed w-full h-screen top-0 left-0 grid place-items-center bg-myBlue z-50 opacity-90">
+        <div className="fixed w-full h-screen top-0 left-0 grid place-items-center bg-myBlue z-50 opacity-95">
           <div className="text-4xl text-myYellow flex flex-col justify-around h-3/6">
             <h2> {winner === false ? "Tie" : "Winner :"} </h2>
 

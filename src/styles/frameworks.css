@@ -4,8 +4,7 @@
 }
 
 .sliderB {
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);;
   margin: auto;
   overflow: hidden;
   width: 21rem;
