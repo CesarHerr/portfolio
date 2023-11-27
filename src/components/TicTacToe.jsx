@@ -1,14 +1,14 @@
-import { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useDispatch } from "react-redux";
-import confetti from "canvas-confetti";
+import { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useDispatch } from 'react-redux';
+import confetti from 'canvas-confetti';
 import '../styles/tictactoe.css';
-import PropTypes from "prop-types";
-import { setOnAbout } from "../redux/projectSlice";
+import PropTypes from 'prop-types';
+import { setOnAbout } from '../redux/projectSlice';
 
 const Square = ({ children, updateBoard, isSelected, index }) => {
   const className = `square inline text-sm w-8 h-8 border border-myGray rounded-sm cursor-pointer
-                    grid place-items-center ${isSelected ? `bg-myYellow` : ""}`;
+                    grid place-items-center ${isSelected ? `bg-myYellow` : ''}`;
 
   const handleClick = () => {
     updateBoard(index);
@@ -30,10 +30,10 @@ Square.propTypes = {
 
 function TicTacToe() {
   const dispatch = useDispatch();
-  const { ref: refAbout, inView: inViewAbout} = useInView();
+  const { ref: refAbout, inView: inViewAbout } = useInView();
   const turns = {
-    X: "❌",
-    O: "⭕",
+    X: '❌',
+    O: '⭕',
   };
 
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -51,7 +51,7 @@ function TicTacToe() {
     [0, 4, 8],
     [2, 4, 6],
   ];
-  
+
   const checkWinner = (boardCheck) => {
     for (let i of winnerCombos) {
       const [a, b, c] = i;
@@ -86,13 +86,14 @@ function TicTacToe() {
         }, []);
 
         if (emptySquares.length > 0) {
-          const randomIndex = emptySquares[Math.floor(Math.random() * emptySquares.length)];
+          const randomIndex =
+            emptySquares[Math.floor(Math.random() * emptySquares.length)];
           updateBoard(randomIndex);
         }
       }
     };
     setTimeout(() => {
-        performComputerMove();
+      performComputerMove();
     }, 700);
   }, [board, turn, isGameInProgress, turns.O]);
 
@@ -112,22 +113,26 @@ function TicTacToe() {
     if (newWinner) {
       confetti();
       setWinner(newWinner);
-      setIsGameInProgress(false); 
+      setIsGameInProgress(false);
     } else if (checkEndGame(newBoard)) {
       setWinner(false);
     }
   };
 
   useEffect(() => {
-    dispatch(setOnAbout(inViewAbout));  
+    dispatch(setOnAbout(inViewAbout));
   }, [inViewAbout, dispatch]);
 
   return (
     <section className="w-fit mx-auto overflow-hidden" id="playGround">
       <div ref={refAbout} className="flex mt-10 justify-center">
         <div className="flex justify-center gap-2 w-full">
-          <p className="text-xs font-bold text-myBlue -rotate-12 animate-pulse curs">It&apos;s your turn !</p>
-          <p className="text-xs font-bold text-myBlue rotate-12 animate-pulse-slow">Come on is easy !</p>
+          <p className="text-xs font-bold text-myBlue -rotate-12 animate-pulse curs">
+            It&apos;s your turn !
+          </p>
+          <p className="text-xs font-bold text-myBlue rotate-12 animate-pulse-slow">
+            Come on is easy !
+          </p>
         </div>
       </div>
       <div className="grid place-content-center">
@@ -148,13 +153,18 @@ function TicTacToe() {
       {winner !== null && (
         <div className="fixed w-full h-screen top-0 left-0 grid place-items-center bg-myBlue z-50 opacity-95">
           <div className="text-4xl text-myYellow flex flex-col justify-around h-3/6">
-            <h2> {winner === false ? "Tie" : "Winner :"} </h2>
+            <h2> {winner === false ? 'Tie' : 'Winner :'} </h2>
 
             <header className="win">
-              {winner && <Square >{winner}</Square>}
+              {winner && <Square>{winner}</Square>}
             </header>
             <footer>
-              <button className="mt-20 p-5 rounded cursor-pointer" onClick={resetGame}>Start New Game</button>
+              <button
+                className="mt-20 p-5 rounded cursor-pointer"
+                onClick={resetGame}
+              >
+                Start New Game
+              </button>
             </footer>
           </div>
         </div>
