@@ -14,11 +14,21 @@ function Skills() {
   }, [inView, dispatch]);
 
   return (
-    <section className="h-screen w-full md:ml-[22%] xl:ml-[15%] 2xl:ml-[23%] bg-myYellow md:bg-transparent overflow-hidden" id="skills">
-      <h2 ref={ref} className={`text-4xl md:text-6xl font-bold pb-28 mt-14 ${inView ? 'titleAnimation' : 'opacity-0'}`}>Tech Skills</h2>
+    <section
+      className="h-screen w-full md:ml-[22%] xl:ml-[15%] 2xl:ml-[23%] bg-myYellow md:bg-transparent overflow-hidden"
+      id="skills"
+    >
+      <h2
+        ref={ref}
+        className={`text-4xl md:text-6xl font-bold pb-28 mt-14 ${
+          inView ? 'titleAnimation' : 'opacity-0'
+        }`}
+      >
+        Tech Skills
+      </h2>
       <div className="grid place-content-center h-3/5">
         <div className="grid h-96">
-          <Language  />
+          <Language />
           <Frameworks />
         </div>
       </div>
