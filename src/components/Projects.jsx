@@ -33,7 +33,7 @@ function Projects() {
 
   return (
     <section
-      className="flex flex-col gap-8 items-center relative pb-28 md:ml-[20%] xl:ml-[30%] overflow-hidden"
+      className="flex flex-col gap-8 items-center relative pb-28 md:ml-[20rem] xl:ml-[25rem] overflow-hidden"
       id="projects"
     >
       <span ref={refProjectTitle}>
@@ -48,7 +48,7 @@ function Projects() {
       <div>
         <div
           ref={refA}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             ref={refProject}
@@ -69,9 +69,9 @@ function Projects() {
             <img
               src={images.carpet}
               alt="carpet"
-              className="w-full absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-500"
+              className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-500"
             />
-            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
+            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
           </div>
@@ -90,9 +90,11 @@ function Projects() {
           </div>
         </div>
 
+        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+
         <div
           ref={refB}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
+          className="flex flex-col lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -123,20 +125,22 @@ function Projects() {
               alt="paid ups"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
+            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
               src={images.carpet}
               alt="carpet"
-              className="w-full absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
+              className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
             />
           </div>
         </div>
 
+        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+
         <div
           ref={refC}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -153,13 +157,13 @@ function Projects() {
               alt="recipe app"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
+            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
               src={images.carpet}
               alt="carpet"
-              className="w-full absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
+              className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
             />
           </div>
           <div
@@ -177,9 +181,11 @@ function Projects() {
           </div>
         </div>
 
+        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+
         <div
           ref={refD}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
+          className="flex flex-col lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -209,20 +215,22 @@ function Projects() {
               alt="bow encyclopedia"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
+            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
               src={images.carpet}
               alt="carpet"
-              className="w-full absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
+              className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
             />
           </div>
         </div>
 
+        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+
         <div
           ref={refE}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             ref={refProjectB}
@@ -240,13 +248,13 @@ function Projects() {
               alt="space web"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
+            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
               src={images.carpet}
               alt="carpet"
-              className="w-full absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
+              className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
             />
           </div>
           <div
@@ -264,9 +272,11 @@ function Projects() {
           </div>
         </div>
 
+        <hr className="border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+
         <div
           ref={refF}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24 md:h-[220px]"
+          className="flex flex-col lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -274,10 +284,10 @@ function Projects() {
             }`}
           >
             <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue">
-            Hiking and Adventure Sports
+              Hiking and Adventure Sports
             </p>
             <p className="md:text-xl text-left lg:text-right">
-            This is a web about Adventure Sports experiences.
+              This is a web about Adventure Sports experiences.
             </p>
           </div>
           <div
@@ -295,13 +305,13 @@ function Projects() {
               alt="adventure sports web"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
+            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
               src={images.carpet}
               alt="carpet"
-              className="w-full absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
+              className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-300"
             />
           </div>
         </div>

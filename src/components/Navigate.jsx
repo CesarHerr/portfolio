@@ -11,18 +11,18 @@ function Navigate() {
 
   return (
     <aside
-      className="flex flex-col w-full md:w-[20%] xl:w-[30%] items-start justify-center gap-5 
-      md:fixed h-screen bg-myYellow min-w-[330px] z-10 relative"
+      className="flex flex-col w-full md:w-[20rem] xl:w-[25rem] items-start justify-center gap-5 
+      md:fixed h-screen bg-myYellow z-10 relative overflow-hidden"
     >
       <header
-        className="flex justify-start items-end ml-10 w-full max-w-[400px] relative top-2 md:flex-col md:justify-center 
-      md:gap-0 md:ml-10 md:items-center"
+        className="flex justify-center items-center ml-5 w-full max-w-[400px] top-2 md:flex-col md:justify-center 
+      gap-0 md:ml-10"
       >
         <div className="min-w-[250px] relative z-20">
-          <h1 className="text-left text-5xl xl:text-6xl 2xl:text-7xl font-dancing font-bold -rotate-12 w-full animation">
+          <h1 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full animation">
             Hey There.
           </h1>
-          <h2 className="text-left text-5xl xl:text-6xl 2xl:text-7xl font-dancing font-bold -rotate-12 mb-7 w-full">
+          <h2 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 mb-7 w-full">
             I&apos;m César.
           </h2>
         </div>
@@ -30,14 +30,14 @@ function Navigate() {
           src={images.myAvatar}
           alt="avatar"
           className="w-36 h-36 rounded-full border-4 border-myGray
-         bg-myPurple z-0"
+          bg-myPurple z-0 relative right-8 md:right-auto"
         />
       </header>
       <section>
-        <h3 className="text-left text-2xl pt-5 w-10/12 ml-10 text-myBlue md:hidden">
+        <h3 className="text-left text-2xl pt-5 w-10/12 ml-5 text-myBlue md:hidden">
           I&apos;m a Full Stack Developer
         </h3>
-        <p className="w-10/12 text-left text-md ml-10 md:hidden">
+        <p className="w-10/12 text-left text-md ml-5 md:hidden">
           {' '}
           With a background in database administration, and technical support.
           In the last year I spent 1300+ hours studying and working in a remote
@@ -45,7 +45,7 @@ function Navigate() {
           git-flow, and daily stand ups to communicate and collaborate with
           international remote developers.
         </p>
-        <p className="hidden md:block pt-5 w-10/12 md:w-9/12 text-left ml-10 md:ml-14 text-lg">
+        <p className="hidden md:block w-10/12 md:w-9/12 text-left ml-10 md:ml-14 text-lg">
           {' '}
           I can help you build a product , feature or website. Look through some
           of my work and experience!{' '}

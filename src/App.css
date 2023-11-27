@@ -52,12 +52,12 @@
 }
 
 .moveLeft {
-  animation: moveLeft 0.6s ease-in-out;
+  animation: moveLeft 0.8s ease-in-out;
 }
 
 @keyframes moveLeft {
   0% {
-    transform: translateX(-7rem);
+    transform: translateX(-4rem);
     opacity: 0;
   }
 
@@ -68,12 +68,12 @@
 }
 
 .moveRight {
-  animation: moveRight 0.6s ease-in-out;
+  animation: moveRight 0.8s ease-in-out;
 }
 
 @keyframes moveRight {
   0% {
-    transform: translateX(7rem);
+    transform: translateX(4rem);
     opacity: 0;
   }
 

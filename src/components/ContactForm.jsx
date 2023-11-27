@@ -17,7 +17,7 @@ function ContactForm() {
 
   return (
     <section
-      className="grid overflow-hidden h-screen leftSide md:ml-[20%] xl:ml-[30%]"
+      className="grid overflow-hidden h-screen leftSide md:ml-[20rem] xl:ml-[25rem]"
       id="contactForm"
     >
       <h2
