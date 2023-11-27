@@ -33,13 +33,12 @@ function Projects() {
 
   return (
     <section
-      className="flex flex-col gap-8 items-center lg:w-[65%] md:w-[55%]
-      relative pb-28 md:ml-[20%] xl:ml-[30%]  overflow-hidden "
+      className="flex flex-col gap-8 items-center relative pb-28 md:ml-[20%] xl:ml-[30%] overflow-hidden"
       id="projects"
     >
       <span ref={refProjectTitle}>
         <h2
-          className={`container text-center my-10 md:my-14 text-4xl md:text-4xl font-bold ${
+          className={`container text-center my-10 md:my-14 text-4xl md:text-5xl font-bold ${
             inViewProjectTitle ? 'titleAnimation' : 'hidden'
           }`}
         >
@@ -49,13 +48,13 @@ function Projects() {
       <div>
         <div
           ref={refA}
-          className="flex flex-col-reverse lg:flex-row justify-center lg:justify-around items-center w-full gap-10 mb-24 md:w-10/12 mx-auto md:gap-0 lg:mb-26"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
         >
           <div
             ref={refProject}
             className={`${
               inViewA
-                ? 'moveLeft  w-10/12 max-w-[300px] lg:w-5/12 relative group cursor-pointer'
+                ? 'moveLeft w-10/12 max-w-[300px] lg:w-5/12 relative group cursor-pointer'
                 : 'hidden'
             }`}
             onClick={() => {
@@ -93,7 +92,7 @@ function Projects() {
 
         <div
           ref={refB}
-          className="flex flex-col lg:flex-row justify-center lg:justify-around items-center w-full gap-10 mb-24 md:w-10/12 mx-auto md:gap-0 lg:mb-26"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
         >
           <div
             className={`${
@@ -112,7 +111,7 @@ function Projects() {
             ref={refProjectC}
             className={`${
               inViewB
-                ? 'moveRight  w-10/12 max-w-[450px] lg:w-5/12 relative group cursor-pointer'
+                ? 'moveRight w-10/12 max-w-[300px] lg:w-5/12 relative group cursor-pointer'
                 : 'hidden'
             }`}
             onClick={() => {
@@ -124,7 +123,7 @@ function Projects() {
               alt="paid ups"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="opacity-0 group-hover:animate-bounce group-hover:opacity-100 text-myBlue mt-7 xl:mt-10">
+            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
               Click for more 👆
             </p>
             <img
@@ -137,12 +136,12 @@ function Projects() {
 
         <div
           ref={refC}
-          className="flex flex-col-reverse lg:flex-row justify-center lg:justify-around items-center w-full gap-10 mb-24 md:w-10/12 mx-auto md:gap-0 lg:mb-26"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
         >
           <div
             className={`${
               inViewC
-                ? 'moveLeft  w-10/12 max-w-[450px] lg:w-5/12 relative group cursor-pointer'
+                ? 'moveLeft  w-10/12 max-w-[300px] lg:w-5/12 relative group cursor-pointer'
                 : 'hidden'
             }`}
             onClick={() => {
@@ -154,7 +153,7 @@ function Projects() {
               alt="recipe app"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="opacity-0 group-hover:animate-bounce group-hover:opacity-100 text-myBlue mt-7 xl:mt-10">
+            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
               Click for more 👆
             </p>
             <img
@@ -180,7 +179,7 @@ function Projects() {
 
         <div
           ref={refD}
-          className="flex flex-col lg:flex-row justify-center lg:justify-around items-center w-full gap-10 mb-24 md:w-10/12 mx-auto md:gap-0 lg:mb-26"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
         >
           <div
             className={`${
@@ -198,7 +197,7 @@ function Projects() {
           <div
             className={`${
               inViewD
-                ? 'moveRight  w-10/12 max-w-[450px] lg:w-5/12 relative group cursor-pointer'
+                ? 'moveRight  w-10/12 max-w-[300px] lg:w-5/12 relative group cursor-pointer'
                 : 'hidden'
             }`}
             onClick={() => {
@@ -210,7 +209,7 @@ function Projects() {
               alt="bow encyclopedia"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="opacity-0 group-hover:animate-bounce group-hover:opacity-100 text-myBlue mt-7 xl:mt-10">
+            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
               Click for more 👆
             </p>
             <img
@@ -223,13 +222,13 @@ function Projects() {
 
         <div
           ref={refE}
-          className="flex flex-col-reverse lg:flex-row justify-center lg:justify-around items-center w-full gap-10 mb-24 md:w-10/12 mx-auto md:gap-0 lg:mb-26"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24"
         >
           <div
             ref={refProjectB}
             className={`${
               inViewE
-                ? 'moveLeft  w-10/12 max-w-[450px] lg:w-5/12 relative group cursor-pointer'
+                ? 'moveLeft  w-10/12 max-w-[300px] lg:w-5/12 relative group cursor-pointer'
                 : 'hidden'
             }`}
             onClick={() => {
@@ -241,7 +240,7 @@ function Projects() {
               alt="space web"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="opacity-0 group-hover:animate-bounce group-hover:opacity-100 text-myBlue mt-7 xl:mt-10">
+            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
               Click for more 👆
             </p>
             <img
@@ -267,7 +266,7 @@ function Projects() {
 
         <div
           ref={refF}
-          className="flex flex-col lg:flex-row justify-center lg:justify-around items-center w-full gap-10 mb-24 md:w-10/12 mx-auto md:gap-0 lg:mb-26"
+          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 mb-24 md:h-[220px]"
         >
           <div
             className={`${
@@ -275,16 +274,16 @@ function Projects() {
             }`}
           >
             <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue">
-              Hiking and Adventure Sports
+            Hiking and Adventure Sports
             </p>
             <p className="md:text-xl text-left lg:text-right">
-              This is a web about Adventure Sports experiences.
+            This is a web about Adventure Sports experiences.
             </p>
           </div>
           <div
             className={`${
               inViewF
-                ? 'moveRight  w-10/12 max-w-[450px] lg:w-5/12 relative group cursor-pointer'
+                ? 'moveRight  w-10/12 max-w-[300px] lg:w-5/12 relative group cursor-pointer'
                 : 'hidden'
             }`}
             onClick={() => {
@@ -296,7 +295,7 @@ function Projects() {
               alt="adventure sports web"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow"
             />
-            <p className="opacity-0 group-hover:animate-bounce group-hover:opacity-100 text-myBlue mt-7 xl:mt-10">
+            <p className="group-hover:animate-bounce text-myBlue mt-7 md:mt-12">
               Click for more 👆
             </p>
             <img
