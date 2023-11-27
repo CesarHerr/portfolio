@@ -48,7 +48,7 @@ function Projects() {
       <div>
         <div
           ref={refA}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col-reverse lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             ref={refProject}
@@ -71,7 +71,7 @@ function Projects() {
               alt="carpet"
               className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-500"
             />
-            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
           </div>
@@ -94,7 +94,7 @@ function Projects() {
 
         <div
           ref={refB}
-          className="flex flex-col lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -125,7 +125,7 @@ function Projects() {
               alt="paid ups"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
@@ -140,7 +140,7 @@ function Projects() {
 
         <div
           ref={refC}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col-reverse lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -157,7 +157,7 @@ function Projects() {
               alt="recipe app"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
@@ -185,7 +185,7 @@ function Projects() {
 
         <div
           ref={refD}
-          className="flex flex-col lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -215,7 +215,7 @@ function Projects() {
               alt="bow encyclopedia"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
@@ -230,7 +230,7 @@ function Projects() {
 
         <div
           ref={refE}
-          className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col-reverse lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             ref={refProjectB}
@@ -248,7 +248,7 @@ function Projects() {
               alt="space web"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
@@ -276,7 +276,7 @@ function Projects() {
 
         <div
           ref={refF}
-          className="flex flex-col lg:flex-row justify-center items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -305,7 +305,7 @@ function Projects() {
               alt="adventure sports web"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
               Click for more 👆
             </p>
             <img
