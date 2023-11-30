@@ -14,6 +14,7 @@ import space from './space.webp';
 import x from './x.png';
 import zelda from './zelda.webp';
 import post from './post.webp';
+import pin from './pin.webp';
 
 const images = {
   carpet,
@@ -32,6 +33,7 @@ const images = {
   x,
   zelda,
   post,
+  pin,
 };
 
 

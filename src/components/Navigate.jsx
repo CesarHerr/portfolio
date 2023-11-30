@@ -22,7 +22,7 @@ function Navigate() {
           <h1 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full animation">
             Hey There.
           </h1>
-          <h2 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 mb-7 w-full">
+          <h2 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full">
             I&apos;m César.
           </h2>
         </div>
@@ -52,10 +52,10 @@ function Navigate() {
         </p>
         <nav
           className="flex items-center w-full bg-myPurple md:bg-transparent md:bg-none justify-around md:flex-col fixed md:relative md:items-start 
-          top-0 md:pt-5 leading-8 md:w-4/5 md:ml-14 text-xl z-40"
+          top-0 md:pt-5 leading-8 md:w-4/5 md:ml-14 text-xl z-40 overflow-hidden"
         >
           <a
-            href="/"
+            href="/portfolio_1.2/"
             className={`font-bold ${
               onAbout ? 'animatedBack active' : 'animatedOut reverse'
             }`}
