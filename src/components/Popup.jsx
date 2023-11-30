@@ -3,6 +3,7 @@ import img from '../assets/images';
 import { GrDeploy } from 'react-icons/gr';
 import { setProject } from '../redux/projectSlice';
 import { FiGithub } from 'react-icons/fi';
+import images from '../assets/images';
 
 function Popup() {
   const { project } = useSelector((state) => state.project);
@@ -13,7 +14,9 @@ function Popup() {
       image: img.rfad2,
       name: 'Rent for a day',
       description:
-        'This is a reservation-based application to rent a property/accommodation for a day.',
+      'This is a reservation-based application to rent a property/accommodation for a day.',
+      description2: 'Full-stack app created with React and Rails.',
+      link: 'https://rent-for-a-day.onrender.com/api-docs/index.html',
       tech: [
         'Ruby on Rails',
         'Devise',
@@ -25,14 +28,15 @@ function Popup() {
         'Bootstrap',
         'HTML',
       ],
-      live: 'https://cesarherr.github.io/metrics_webapp_botw/',
-      source: 'https://github.com/CesarHerr/metrics_webapp_botw',
+      live: 'https://cesarherr.github.io/rentforaday-front-end/',
+      source: 'https://github.com/CesarHerr/rentforaday-front-end',
     },
     {
       image: img.paids,
       name: 'Paid Ups',
       description:
         'This application is designed to help you manage your finances and expenses, assisting in maintaining clear financial organization for personal, family, or work-related finances.',
+      description2: 'Full-stack app created with Ruby on Rails and PostgreSQL.',
       tech: [
         'Ruby on Rails',
         'Devise',
@@ -49,6 +53,7 @@ function Popup() {
       name: 'Recipe App',
       description:
         'The Recipe app keeps track of all your recipes, ingredients, and inventory.',
+      description2: 'Full-stack app created with Ruby on Rails and PostgreSQL.',
       tech: [
         'Ruby on Rails',
         'Devise',
@@ -65,6 +70,7 @@ function Popup() {
       name: 'Bowtf Encyclopedia',
       description:
         'This web application is a Single Page Application (SPA) serving as an encyclopedia for all the interactive in-game items in the world of Hyrule.',
+      description2: 'Web app created with React-Redux.',
       tech: ['JavaScript', 'React-redux', 'CSS', 'HTML', 'SASS'],
       live: 'https://cesarherr.github.io/metrics_webapp_botw/',
       source: 'https://github.com/CesarHerr/metrics_webapp_botw',
@@ -74,17 +80,19 @@ function Popup() {
       name: 'Space Travelers Hub',
       description:
         'The space travelers hub is a web application that allows users to book rockets and join space missions.',
+      description2: 'Web app created with React-Redux.',
       tech: ['JavaScript', 'React-redux', 'Jest', 'CSS', 'HTML'],
-      live: 'space-travelers-z8vp.onrender.com/',
+      live: 'https://cesarherr.github.io/Space_Travelers/',
       source: 'https://github.com/CesarHerr/Space_Travelers',
     },
     {
       image: img.hiking,
       name: 'Hiking and Adventure Sports',
-      description: 'This is a web abpot Adventure Sports experiences',
+      description: 'This is a web about Adventure Sports experiences',
+      description2: 'Web app created with HTML, SASS and Vanilla JavaScript.',
       tech: ['JavaScript', 'SASS', 'HTML'],
-      live: 'cesarherr.github.io/CapstoneModule1',
-      source: 'https://github.com/CesarHerr/Recipe_App',
+      live: 'https://cesarherr.github.io/CapstoneModule1',
+      source: 'https://github.com/CesarHerr/CapstoneModule1',
     },
   ];
 
@@ -95,11 +103,15 @@ function Popup() {
   return (
     <>
       {allProjects[project] && (
-        <section className="fixed w-full h-full grid place-items-center bg-myGreen z-50 left-0 overflow-hidden">
-          <div className="popup w-11/12 md:w-9/12 h-[85%] md:h-[80%] xl:h-[75%] bg-myYellow flex flex-col rounded-xl md:items-center shadow-myShadow">
-            <h2 className="pt-10 lg:py-3 hidden lg:inline xl:py-7 text-3xl xl:text-5xl font-dancing font-bold">
+        <section className="fixed w-full h-full grid place-items-center bg-myGreen z-50">
+          <div className="popup w-11/12 sm:w-9/12 bg-myYellow flex flex-col rounded-xl items-center shadow-myShadow">
+            <h2 className="pt-10 lg:pt-10 hidden md:inline xl:py-7 text-3xl xl:text-5xl font-dancing font-bold">
               {allProjects[project].name}
             </h2>
+            <img
+              src={images.pin}
+              className="pin absolute w-2/12 -top-7 md:-top-10 md:w-[110px] lg:-top-14 xl:lg:-top-12"
+            />
             <button
               type="button"
               className="absolute right-2 top-2 xl:right-10 xl:top-6 text-2xl xl:text-5xl  hover:scale-125 transition duration-300"
@@ -109,18 +121,18 @@ function Popup() {
             >
               X
             </button>
-            <div className="md:w-full">
-              <h2 className="pt-10 lg:py-3 lg:hidden  xl:py-7 text-3xl xl:text-5xl font-dancing font-bold">
+            <div className="sm:w-full">
+              <h2 className="pt-5 md:py-3 md:hidden  xl:py-7 text-3xl xl:text-5xl font-dancing font-bold">
                 {allProjects[project].name}
               </h2>
               <hr className="border-2 border-myGreen my-2" />
-              <ul className="flex flex-wrap gap-1 md:gap-1 xl:gap-2 p-5 w-full md:w-11/12 xl:w-10/12 mx-auto">
+              <ul className="flex flex-wrap gap-1 xl:gap-2 px-5 pb-3 w-full sm:w-11/12 xl:w-10/12 mx-auto">
                 {allProjects[project].tech.map((tech, index) => (
                   <li
                     key={index}
                     className={
                       tech
-                        ? 'font-extrabold text-white leading-4 md:leading-4 md:p-2 border-2 border-myBlue bg-myPurple rounded p-1 text-sm'
+                        ? 'font-extrabold text-white leading-4 sm:leading-4 sm:p-2 border-2 border-myBlue bg-myPurple rounded p-1 text-sm'
                         : 'noDisplay'
                     }
                   >
@@ -131,23 +143,32 @@ function Popup() {
               <img
                 src={allProjects[project].image}
                 alt="algo"
-                className="w-10/12 mx-auto lg:hidden mb-4 md:mb-1 lg:mt-2 border-2 
-            border-myGray rounded shadow-myShadow"
+                className="w-10/12 mx-auto md:hidden mb-4 sm:mb-1 md:mt-2 border-2 
+              border-myGray rounded shadow-myShadow"
               />
             </div>
 
-            <div className="w-11/12 lg:w-[95%] flex flex-col lg:flex-row justify-around lg:gap-10 items-center lg:items-start  mx-auto md:h-5/6 lg:h-full">
+            <div className="w-11/12 lg:w-[95%] flex flex-col lg:flex-row justify-around lg:gap-10 items-center lg:items-start mx-auto sm:h-5/6 lg:h-full mt-2">
               <img
                 src={allProjects[project].image}
-                alt="algo"
-                className="w-7/12 hidden lg:inline lg:max-w-[380px] xl:max-w-[600px] mx-auto
-            mb-4 lg:mt-2 border-2 border-myGray rounded shadow-myShadow"
+                alt={allProjects[project].name}
+                className="w-7/12 hidden md:inline md:max-w-[380px] xl:max-w-[600px] mx-auto
+                mb-4 lg:mb-24 border-2 border-myGray rounded shadow-myShadow"
               />
-              <p className="lg:w-4/12 xl:w-5/12 text-left md:text-lg lg:min-w-[300px]">
-                {allProjects[project].description}
-              </p>
+              <div className="sm:mb-auto lg:w-4/12 xl:w-5/12 lg:min-w-[340px]">
+                <p className="w-full text-left sm:text-lg">
+                  {allProjects[project].description}
+                </p>
+                <p className="text-left sm:text-lg">
+                  {allProjects[project].description2}
+                </p>
+                {allProjects[project].link ? (
+                <p className="text-left sm:text-lg">
+                You can see the API documentation <a href={allProjects[project].link} className="font-extrabold" target="_blank">here</a>
+                </p> ) : null }
+                </div>
               <div
-                className="absolute bottom-3 md:relative lg:absolute lg:bottom-8 md:bottom-auto flex justify-between xl:justify-end
+                className="my-5 lg:my-6 lg:absolute lg:bottom-2 flex justify-between xl:justify-end
               w-8/12 xl:w-11/12 mx-auto min-w-[250px] xl:gap-6"
               >
                 <a
