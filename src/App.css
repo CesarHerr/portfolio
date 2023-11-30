@@ -34,9 +34,26 @@
   }
 }
 
+.pin {
+ animation: comeHerePin 0.8s ease-in-out;
+ animation-fill-mode: forwards;
+}
+
 .popup {
   animation: comeHere 0.4s ease-in-out;
   animation-fill-mode: forwards;
+}
+
+@keyframes comeHerePin {
+  0% {
+    opacity: 0;
+    transform: translateY(-50rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes comeHere {
