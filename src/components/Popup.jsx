@@ -164,7 +164,7 @@ function Popup() {
                 </p>
                 {allProjects[project].link ? (
                 <p className="text-left sm:text-lg">
-                You can see the API documentation <a href={allProjects[project].link} className="font-extrabold" target="_blank">here</a>
+                You can see the API documentation <a href={allProjects[project].link} className="font-extrabold" target="_blank" rel="noreferrer">here</a>
                 </p> ) : null }
                 </div>
               <div

@@ -35,8 +35,8 @@
 }
 
 .pin {
- animation: comeHerePin 0.8s ease-in-out;
- animation-fill-mode: forwards;
+  animation: comeHerePin 0.8s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .popup {
