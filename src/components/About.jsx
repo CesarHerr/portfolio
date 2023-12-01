@@ -19,10 +19,11 @@ function About() {
         git-flow, and daily stand ups to communicate and collaborate with
         international remote developers.
       </p>
-      <div className="w-[210px] h-[260px] opacity-80 2xl:pt-16 absolute bottom-10 lg:bottom-24 right-10">
+      <div className="w-[220px] h-[260px] opacity-80 mt-26 relative lg:top-20 right-10">
         <img
           src={images.post}
-          className="w-[210px] h-[220px] rotate-6 absolute -z-10"
+          alt="post-it"
+          className="w-[220px] h-[220px] rotate-6 -z-10 absolute top-0 right-0"
         />
         <TicTacToe />
       </div>

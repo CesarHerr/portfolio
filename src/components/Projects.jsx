@@ -48,7 +48,7 @@ function Projects() {
       <div className="w-full">
         <div
           ref={refA}
-          className="flex flex-col-reverse lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col-reverse lg:flex-row justify-center lg:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             ref={refProject}
@@ -94,7 +94,7 @@ function Projects() {
 
         <div
           ref={refB}
-          className="flex flex-col lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col lg:flex-row justify-center lg:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -140,7 +140,7 @@ function Projects() {
 
         <div
           ref={refC}
-          className="flex flex-col-reverse lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col-reverse lg:flex-row justify-center lg:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -185,7 +185,7 @@ function Projects() {
 
         <div
           ref={refD}
-          className="flex flex-col lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col lg:flex-row justify-center lg:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
@@ -230,7 +230,7 @@ function Projects() {
 
         <div
           ref={refE}
-          className="flex flex-col-reverse lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col-reverse lg:flex-row justify-center lg:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             ref={refProjectB}
@@ -276,7 +276,7 @@ function Projects() {
 
         <div
           ref={refF}
-          className="flex flex-col lg:flex-row justify-center md:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
+          className="flex flex-col lg:flex-row justify-center lg:items-start items-center w-full gap-10 my-12 h-[400px] md:h-[220px]"
         >
           <div
             className={`${
