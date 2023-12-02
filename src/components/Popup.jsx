@@ -110,7 +110,11 @@ function Popup() {
             </h2>
             <img
               src={images.pin}
-              className="pin absolute w-2/12 -top-7 md:-top-10 md:w-[110px] lg:-top-14 xl:lg:-top-12"
+              className="pin absolute dark:hidden w-2/12 -top-7 md:-top-10 md:w-[110px] lg:-top-14 xl:lg:-top-12"
+            />
+            <img
+              src={images.pinNight}
+              className="pin absolute hidden dark:inline w-2/12 -top-7 md:-top-10 md:w-[110px] lg:-top-14 xl:lg:-top-9"
             />
             <button
               type="button"

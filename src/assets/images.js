@@ -19,8 +19,10 @@ import tail from './tailCat2.png';
 import cat2 from './catP22.png';
 import tailBlack from './tailBlack.png';
 import catBlack from './catBlack.png';
+import pinNight from './pin2.png';
 
 const images = {
+  pinNight,
   tailBlack,
   catBlack,
   cat2,
