@@ -8,7 +8,7 @@ function About() {
       md:ml-[20rem] xl:ml-[25rem] mb-24"
       id="about"
     >
-      <h3 className="w-10/12 text-left text-3xl lg:text-4xl mt-[20%] text-myBlue">
+      <h3 className="w-10/12 text-left text-3xl lg:text-4xl mt-[20%] text-myBlue dark:text-myLightBlue">
         I&apos;m a Full Stack Developer
       </h3>
       <p className="w-10/12 text-left text-xl ">
