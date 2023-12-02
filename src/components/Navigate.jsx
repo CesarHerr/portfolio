@@ -108,11 +108,15 @@ function Navigate() {
           <a
             href="/portfolio_1.2/"
             className={`font-bold md:my-2 ${
-              onAbout && theme === 'light'
+              theme === 'light' && onAbout
                 ? 'animatedBack active'
-                : onAbout && theme === 'dark'
+                : theme === 'light' && !onAbout
+                ? 'animatedOut reverse'
+                : theme === 'dark' && onAbout
                 ? 'animatedBack2 active'
-                : 'animatedOut2 reverse'
+                : theme === 'dark' && !onAbout
+                ? 'animatedOut2 reverse'
+                : ''
             }`}
           >
             <hr
@@ -125,11 +129,15 @@ function Navigate() {
           <a
             href="#projects"
             className={`font-bold md:my-2 ${
-              onProject && theme === 'light'
+              theme === 'light' && onProject
                 ? 'animatedBack active'
-                : onProject && theme === 'dark'
+                : theme === 'light' && !onProject
+                ? 'animatedOut reverse'
+                : theme === 'dark' && onProject
                 ? 'animatedBack2 active'
-                : 'animatedOut2 reverse'
+                : theme === 'dark' && !onProject
+                ? 'animatedOut2 reverse'
+                : ''
             }`}
           >
             <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
@@ -138,24 +146,32 @@ function Navigate() {
           <a
             href="#skills"
             className={`font-bold md:my-2 ${
-              onSkills && theme === 'light'
+              theme === 'light' && onSkills
                 ? 'animatedBack active'
-                : onSkills && theme === 'dark'
+                : theme === 'light' && !onSkills
+                ? 'animatedOut reverse'
+                : theme === 'dark' && onSkills
                 ? 'animatedBack2 active'
-                : 'animatedOut2 reverse'
+                : theme === 'dark' && !onSkills
+                ? 'animatedOut2 reverse'
+                : ''
             }`}
           >
             <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
             Skills
           </a>
           <a
-            href="#contactForm"
+            href="#projects"
             className={`font-bold md:my-2 ${
-              onContact && theme === 'light'
+              theme === 'light' && onContact
                 ? 'animatedBack active'
-                : onContact && theme === 'dark'
+                : theme === 'light' && !onContact
+                ? 'animatedOut reverse'
+                : theme === 'dark' && onContact
                 ? 'animatedBack2 active'
-                : 'animatedOut2 reverse'
+                : theme === 'dark' && !onContact
+                ? 'animatedOut2 reverse'
+                : ''
             }`}
           >
             <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
