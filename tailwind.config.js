@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -23,6 +24,7 @@ export default {
         myGray: '#404040',
         myGreen: '#6FDCBF',
         myBrown: '#29272A',
+        myLightBlue: 'rgb(176, 176, 252)'
       }
     },
   },
