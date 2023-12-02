@@ -15,8 +15,16 @@ import x from './x.png';
 import zelda from './zelda.webp';
 import post from './post.webp';
 import pin from './pin.webp';
+import tail from './tailCat2.png';
+import cat2 from './catP22.png';
+import tailBlack from './tailBlack.png';
+import catBlack from './catBlack.png';
 
 const images = {
+  tailBlack,
+  catBlack,
+  cat2,
+  tail,
   carpet,
   desktop7,
   github,
