@@ -46,7 +46,7 @@ function ContactForm() {
             type="text"
             name="floating_name"
             id="floating_name"
-            className="block py-2.5 px-0 w-full text-lg text-myGray pl-2
+            className="block py-2.5 px-0 w-full text-lg text-myGray dark:text-white pl-2
           bg-transparent border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-myPurple peer"
             placeholder=" "
             required
@@ -54,9 +54,9 @@ function ContactForm() {
 
           <label
             htmlFor="floating_name"
-            className="peer-focus:font-medium absolute text-myGray dark:text-myGray duration-300 
+            className="peer-focus:font-medium absolute text-myGray dark:text-myLightBlue duration-300 
           transform -translate-y-9 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto
-          peer-focus:text-myBlue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:text-myBlue dark:peer-focus:text-myLightBlue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
             peer-focus:scale-75 peer-focus:-translate-y-9"
           >
             Name{' '}
@@ -73,7 +73,7 @@ function ContactForm() {
             type="email"
             name="floating_email"
             id="floating_email"
-            className="block py-2.5 px-0 w-full text-lg text-myGray pl-2
+            className="block py-2.5 px-0 w-full text-lg text-myGray dark:text-white pl-2
           bg-transparent border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-myPurple peer"
             placeholder=" "
             required
@@ -81,9 +81,9 @@ function ContactForm() {
 
           <label
             htmlFor="floating_email"
-            className="peer-focus:font-medium absolute text-myGray dark:text-myGray duration-300
+            className="peer-focus:font-medium absolute text-myGray dark:text-myLightBlue duration-300
           transform -translate-y-9 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto
-          peer-focus:text-myBlue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:text-myBlue dark:peer-focus:text-myLightBlue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
             peer-focus:scale-75 peer-focus:-translate-y-9"
           >
             Email address
@@ -103,7 +103,7 @@ function ContactForm() {
           ></textarea>
 
           <button
-            className={`bg-myYellow p-2 w-2/4 font-bold active:bg-myGray active:text-white shadow-myShadow 
+            className={`bg-myYellow p-2 w-2/4 font-bold active:bg-myGray active:text-white dark:text-myGray dark:active:text-white shadow-myShadow 
           border border-myGray hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mt-14
           ${inViewContactMessage ? 'moveBottom' : 'opacity-0'}`}
           >
