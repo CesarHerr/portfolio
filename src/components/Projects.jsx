@@ -14,11 +14,12 @@ function Projects() {
   const { ref: refF, inView: inViewF } = useInView();
   const { ref: refProjectTitle, inView: inViewProjectTitle } = useInView();
   const { ref: refProject, inView: inViewProject } = useInView();
+  const { ref: refProjectA, inView: inViewProjectA } = useInView();
   const { ref: refProjectB, inView: inViewProjectB } = useInView();
   const { ref: refProjectC, inView: inViewProjectC } = useInView();
   const dispatch = useDispatch();
   const inViews = useMemo(
-    () => [inViewProject, inViewProjectB, inViewProjectC],
+    () => [inViewProject, inViewProjectA, inViewProjectB, inViewProjectC],
     [inViewProject, inViewProjectB, inViewProjectC]
   );
 
@@ -38,7 +39,7 @@ function Projects() {
     >
       <span ref={refProjectTitle}>
         <h2
-          className={`container text-center my-10 md:my-14 text-4xl md:text-5xl font-bold ${
+          className={`container text-center my-10 md:my-14 text-4xl md:text-5xl font-bold dark:text-myLightBlue ${
             inViewProjectTitle ? 'titleAnimation' : 'hidden'
           }`}
         >
@@ -71,7 +72,7 @@ function Projects() {
               alt="carpet"
               className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-500"
             />
-            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
               Click for more 👆
             </p>
           </div>
@@ -80,7 +81,7 @@ function Projects() {
               inViewA ? 'moveRight flex flex-col w-10/12 lg:w-5/12' : 'hidden'
             }`}
           >
-            <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue">
+            <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue dark:text-myLightBlue">
               Rent for a day
             </p>
             <p className="md:text-xl text-left">
@@ -90,7 +91,7 @@ function Projects() {
           </div>
         </div>
 
-        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28 dark:border-white" />
 
         <div
           ref={refB}
@@ -101,7 +102,7 @@ function Projects() {
               inViewB ? 'moveLeft flex flex-col w-10/12 lg:w-5/12' : 'hidden'
             }`}
           >
-            <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue">
+            <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue dark:text-myLightBlue">
               Paid Ups
             </p>
             <p className="md:text-xl text-left lg:text-right">
@@ -125,7 +126,7 @@ function Projects() {
               alt="paid ups"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
               Click for more 👆
             </p>
             <img
@@ -136,7 +137,7 @@ function Projects() {
           </div>
         </div>
 
-        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28 dark:border-white" />
 
         <div
           ref={refC}
@@ -157,7 +158,7 @@ function Projects() {
               alt="recipe app"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
               Click for more 👆
             </p>
             <img
@@ -167,11 +168,12 @@ function Projects() {
             />
           </div>
           <div
+            ref={refProjectA}
             className={`${
               inViewC ? 'moveRight flex flex-col w-10/12 lg:w-5/12' : 'hidden'
             }`}
           >
-            <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue">
+            <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue dark:text-myLightBlue">
               Recipe App
             </p>
             <p className="md:text-xl text-left">
@@ -181,7 +183,7 @@ function Projects() {
           </div>
         </div>
 
-        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28 dark:border-white" />
 
         <div
           ref={refD}
@@ -192,7 +194,7 @@ function Projects() {
               inViewD ? 'moveLeft flex flex-col w-10/12 lg:w-5/12' : 'hidden'
             }`}
           >
-            <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue">
+            <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue dark:text-myLightBlue">
               Botw Encyclopedia
             </p>
             <p className="md:text-xl text-left lg:text-right">
@@ -215,7 +217,7 @@ function Projects() {
               alt="bow encyclopedia"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
               Click for more 👆
             </p>
             <img
@@ -226,7 +228,7 @@ function Projects() {
           </div>
         </div>
 
-        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+        <hr className="bg-myBlue border border-myBlue w-2/6 mx-auto md:w-1/12 my-28 dark:border-white" />
 
         <div
           ref={refE}
@@ -248,7 +250,7 @@ function Projects() {
               alt="space web"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
               Click for more 👆
             </p>
             <img
@@ -262,7 +264,7 @@ function Projects() {
               inViewE ? 'moveRight flex flex-col w-10/12 lg:w-5/12' : 'hidden'
             }`}
           >
-            <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue">
+            <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue dark:text-myLightBlue">
               Space Traveler&apos;s Hub
             </p>
             <p className="md:text-xl text-left">
@@ -272,7 +274,7 @@ function Projects() {
           </div>
         </div>
 
-        <hr className="border border-myBlue w-2/6 mx-auto md:w-1/12 my-28" />
+        <hr className="border border-myBlue w-2/6 mx-auto md:w-1/12 my-28 dark:border-white" />
 
         <div
           ref={refF}
@@ -283,7 +285,7 @@ function Projects() {
               inViewF ? 'moveLeft flex flex-col w-10/12 lg:w-5/12' : 'hidden'
             }`}
           >
-            <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue">
+            <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue dark:text-myLightBlue">
               Hiking and Adventure Sports
             </p>
             <p className="md:text-xl text-left lg:text-right">
@@ -305,7 +307,7 @@ function Projects() {
               alt="adventure sports web"
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
-            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14">
+            <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
               Click for more 👆
             </p>
             <img
