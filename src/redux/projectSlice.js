@@ -6,6 +6,7 @@ const initialState = {
   onProject: false,
   onSkills: false,
   onContact: false,
+  theme: localStorage.getItem('theme') || 'light',
 };
 
 const projectSlice = createSlice({
@@ -27,8 +28,18 @@ const projectSlice = createSlice({
     setOnContact: (state, action) => {
       state.onContact = action.payload;
     },
+    setTheme: (state, action) => {
+      state.theme = action.payload;
+    },
   },
-  });
+});
 
-export const { setProject, setOnAbout, setOnContact, setOnProject, setOnSkills } = projectSlice.actions;
+export const {
+  setProject,
+  setOnAbout,
+  setOnContact,
+  setOnProject,
+  setOnSkills,
+  setTheme,
+} = projectSlice.actions;
 export default projectSlice.reducer;
