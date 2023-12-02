@@ -11,7 +11,7 @@ function App() {
   const { project } = useSelector((state) => state.project);
 
   return (
-    <section className="flex flex-col mx-auto bg-myGreen">
+    <section className="flex flex-col mx-auto bg-myGreen text-myGray dark:bg-slate-900 dark:text-white">
       <About />
       <Navigate />      
       <Projects />
