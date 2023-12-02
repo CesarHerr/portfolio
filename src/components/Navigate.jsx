@@ -43,7 +43,7 @@ function Navigate() {
   return (
     <aside
       className="flex flex-col w-full md:w-[20rem] xl:w-[25rem] items-start justify-center gap-5 
-      md:fixed h-screen bg-myYellow z-10 relative overflow-hidden md:mx-auto dark:bg-slate-950 dark:text-white"
+      md:fixed h-screen bg-myYellow z-10 relative md:mx-auto dark:bg-slate-950 dark:text-white"
     >
       <header
         className="flex justify-center items-center ml-5 max-w-[400px] top-2 md:flex-col md:items-end 
@@ -101,85 +101,88 @@ function Navigate() {
           I can help you build a product , feature or website. Look through some
           of my work and experience!{' '}
         </p>
-        <nav
-          className="flex items-center w-full bg-myPurple dark:bg-purple-950 dark:md:bg-transparent md:bg-transparent md:bg-none justify-around md:flex-col fixed md:relative md:items-start 
-          top-0 md:pt-5 leading-8 md:w-4/5 md:ml-14 text-xl z-40 overflow-hidden"
-        >
-          <a
-            href="/portfolio_1.2/"
-            className={`font-bold md:my-2 ${
-              theme === 'light' && onAbout
-                ? 'animatedBack active'
-                : theme === 'light' && !onAbout
-                ? 'animatedOut reverse'
-                : theme === 'dark' && onAbout
-                ? 'animatedBack2 active'
-                : theme === 'dark' && !onAbout
-                ? 'animatedOut2 reverse'
-                : ''
-            }`}
+
+          <nav
+            className="flex items-center w-full bg-myPurple dark:bg-purple-950 dark:md:bg-transparent md:bg-transparent md:bg-none justify-around md:flex-col fixed md:relative md:items-start 
+          top-0 md:pt-5 leading-8 md:w-4/5 md:ml-14 text-xl z-40"
           >
-            <hr
-              className={`hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white ${
-                onAbout ? '' : ''
+            <a
+              href="/portfolio_1.2/"
+              className={`font-bold md:my-2 ${
+                theme === 'light' && onAbout
+                  ? 'animatedBack active'
+                  : theme === 'light' && !onAbout
+                  ? 'animatedOut reverse'
+                  : theme === 'dark' && onAbout
+                  ? 'animatedBack2 active'
+                  : theme === 'dark' && !onAbout
+                  ? 'animatedOut2 reverse'
+                  : ''
               }`}
-            />{' '}
-            Me{' '}
-          </a>
-          <a
-            href="#projects"
-            className={`font-bold md:my-2 ${
-              theme === 'light' && onProject
-                ? 'animatedBack active'
-                : theme === 'light' && !onProject
-                ? 'animatedOut reverse'
-                : theme === 'dark' && onProject
-                ? 'animatedBack2 active'
-                : theme === 'dark' && !onProject
-                ? 'animatedOut2 reverse'
-                : ''
-            }`}
-          >
-            <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-            Projects
-          </a>
-          <a
-            href="#skills"
-            className={`font-bold md:my-2 ${
-              theme === 'light' && onSkills
-                ? 'animatedBack active'
-                : theme === 'light' && !onSkills
-                ? 'animatedOut reverse'
-                : theme === 'dark' && onSkills
-                ? 'animatedBack2 active'
-                : theme === 'dark' && !onSkills
-                ? 'animatedOut2 reverse'
-                : ''
-            }`}
-          >
-            <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-            Skills
-          </a>
-          <a
-            href="#projects"
-            className={`font-bold md:my-2 ${
-              theme === 'light' && onContact
-                ? 'animatedBack active'
-                : theme === 'light' && !onContact
-                ? 'animatedOut reverse'
-                : theme === 'dark' && onContact
-                ? 'animatedBack2 active'
-                : theme === 'dark' && !onContact
-                ? 'animatedOut2 reverse'
-                : ''
-            }`}
-          >
-            <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-            Contact
-          </a>
-        </nav>
+            >
+              <hr
+                className={`hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white ${
+                  onAbout ? '' : ''
+                }`}
+              />{' '}
+              Me{' '}
+            </a>
+            <a
+              href="#projects"
+              className={`font-bold md:my-2 ${
+                theme === 'light' && onProject
+                  ? 'animatedBack active'
+                  : theme === 'light' && !onProject
+                  ? 'animatedOut reverse'
+                  : theme === 'dark' && onProject
+                  ? 'animatedBack2 active'
+                  : theme === 'dark' && !onProject
+                  ? 'animatedOut2 reverse'
+                  : ''
+              }`}
+            >
+              <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
+              Projects
+            </a>
+            <a
+              href="#skills"
+              className={`font-bold md:my-2 ${
+                theme === 'light' && onSkills
+                  ? 'animatedBack active'
+                  : theme === 'light' && !onSkills
+                  ? 'animatedOut reverse'
+                  : theme === 'dark' && onSkills
+                  ? 'animatedBack2 active'
+                  : theme === 'dark' && !onSkills
+                  ? 'animatedOut2 reverse'
+                  : ''
+              }`}
+            >
+              <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
+              Skills
+            </a>
+            <a
+              href="#projects"
+              className={`font-bold md:my-2 ${
+                theme === 'light' && onContact
+                  ? 'animatedBack active'
+                  : theme === 'light' && !onContact
+                  ? 'animatedOut reverse'
+                  : theme === 'dark' && onContact
+                  ? 'animatedBack2 active'
+                  : theme === 'dark' && !onContact
+                  ? 'animatedOut2 reverse'
+                  : ''
+              }`}
+            >
+              <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
+              Contact
+            </a>
+          </nav>
+
       </section>
-      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-2 md:bottom-0 md:right-auto bg-myGray rounded dark:bg-black dark:border dark:border-white">
+      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-6 md:bottom-0 md:right-auto bg-myGray rounded dark:bg-black dark:border dark:border-white"
+      >
         <a
           className="cursor-pointer hover:scale-110"
           href="https://twitter.com/Cesarherr2"
@@ -207,6 +210,28 @@ function Navigate() {
         >
           <FiGithub className=" hover:text-purple-800 w-5 md:w-10 text-white" />
         </a>
+        <div className="absolute w-full z-50 right-1">
+          <img
+            src={images.cat2}
+            alt="cat"
+            className="absolute -right-1 bottom-0 inline dark:hidden"
+          />
+          <img
+            src={images.tail}
+            alt="cat tail"
+            className="absolute -right-[22.5px] -bottom-[70px] tail inline dark:hidden"
+          />
+          <img
+            src={images.catBlack}
+            alt="cat"
+            className="absolute -right-1 bottom-0 hidden dark:inline"
+          />
+          <img
+            src={images.tailBlack}
+            alt="cat tail"
+            className="absolute -right-[54.5px] -bottom-[70px] tail hidden dark:inline"
+          />
+        </div>
       </footer>
     </aside>
   );
