@@ -103,9 +103,9 @@ function Popup() {
   return (
     <>
       {allProjects[project] && (
-        <section className="fixed w-full h-full grid place-items-center bg-myGreen z-50">
-          <div className="popup w-11/12 sm:w-9/12 bg-myYellow flex flex-col rounded-xl items-center shadow-myShadow">
-            <h2 className="pt-10 lg:pt-10 hidden md:inline xl:py-7 text-3xl xl:text-5xl font-dancing font-bold">
+        <section className="fixed w-full h-full grid place-items-center bg-myGreen z-50 dark:dark:bg-slate-900">
+          <div className="popup w-11/12 sm:w-9/12 bg-myYellow flex flex-col rounded-xl items-center shadow-myShadow dark:bg-slate-950">
+            <h2 className="pt-10 lg:pt-10 hidden md:inline xl:py-7 text-3xl xl:text-5xl font-dancing font-bold dark:text-myLightBlue">
               {allProjects[project].name}
             </h2>
             <img
@@ -125,14 +125,14 @@ function Popup() {
               <h2 className="pt-5 md:py-3 md:hidden  xl:py-7 text-3xl xl:text-5xl font-dancing font-bold">
                 {allProjects[project].name}
               </h2>
-              <hr className="border-2 border-myGreen my-2" />
+              <hr className="border-2 border-myGreen my-2 dark:border-slate-900" />
               <ul className="flex flex-wrap gap-1 xl:gap-2 px-5 pb-3 w-full sm:w-11/12 xl:w-10/12 mx-auto">
                 {allProjects[project].tech.map((tech, index) => (
                   <li
                     key={index}
                     className={
                       tech
-                        ? 'font-extrabold text-white leading-4 sm:leading-4 sm:p-2 border-2 border-myBlue bg-myPurple rounded p-1 text-sm'
+                        ? 'font-extrabold text-white leading-4 sm:leading-4 sm:p-2 border-2 border-myBlue bg-myPurple rounded p-1 text-sm dark:bg-purple-950 dark:border-purple-800'
                         : 'noDisplay'
                     }
                   >
@@ -176,7 +176,8 @@ function Popup() {
                   target="_blank"
                   className="bg-myYellow p-2 w-3/12 max-w-[200px] font-bold active:bg-myGray
               active:text-white hover:bg-myHoverButton shadow-myShadow border border-myGray hover:translate-x-2 hover:translate-y-2
-              hover:text-myBlue flex justify-center items-center group hover:shadow-none transition-all min-w-[120px] xl:w-2/12"
+              hover:text-myBlue flex justify-center items-center group hover:shadow-none transition-all min-w-[120px] xl:w-2/12
+              dark:text-myGray dark:active:text-white"
                   rel="noreferrer"
                 >
                   See live
@@ -188,7 +189,8 @@ function Popup() {
                   target="_blank"
                   className="bg-myYellow p-1 w-4/12 max-w-[200px] font-bold active:bg-myGray
               active:text-white hover:bg-myHoverButton shadow-myShadow border border-myGray hover:translate-x-2 hover:translate-y-2
-              hover:text-myBlue flex justify-center items-center group hover:shadow-none transition-all min-w-[120px] xl:w-2/12"
+              hover:text-myBlue flex justify-center items-center group hover:shadow-none transition-all min-w-[120px] xl:w-2/12
+              dark:text-myGray dark:active:text-white"
                   rel="noreferrer"
                 >
                   See Source
