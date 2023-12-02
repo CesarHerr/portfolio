@@ -148,6 +148,23 @@
       transform 0.3s ease-in-out;
   }
 
+  .animatedBack2,
+  .animatedOut2 {
+    background-image:
+      linear-gradient(
+        transparent 50%,
+        #4f0683 50%,
+        #250a4b 85%,
+        transparent 85%,
+        transparent 100%
+      );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition:
+      background-size 1s cubic-bezier(0.645, 0.045, 0.355, 1),
+      transform 0.3s ease-in-out;
+  }
+
   .active {
     background-size: 100% 100%;
     transform: scale(1.2);
