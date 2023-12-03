@@ -46,7 +46,7 @@ function Navigate() {
       md:fixed h-screen bg-myYellow z-10 relative md:mx-auto dark:bg-slate-950 dark:text-white"
     >
       <header
-        className="flex justify-center items-center ml-5 max-w-[400px] top-2 md:flex-col md:items-end 
+        className="flex justify-center items-center max-w-[400px] top-2 md:flex-col md:items-end 
       gap-0 md:ml-10 w-full sm:w-auto"
       >
         <button
@@ -102,85 +102,86 @@ function Navigate() {
           of my work and experience!{' '}
         </p>
 
-          <nav
-            className="flex items-center w-full bg-myPurple dark:bg-purple-950 dark:md:bg-transparent md:bg-transparent md:bg-none justify-around md:flex-col fixed md:relative md:items-start 
-          top-0 md:pt-5 leading-8 md:w-4/5 md:ml-14 text-xl z-40"
+        <nav
+          className="flex items-center fixed w-full bg-myPurple justify-around top-0 text-xl z-40 leading-8 
+          dark:bg-purple-950 dark:md:bg-transparent md:bg-transparent md:bg-none md:flex-col md:ml-14 md:items-start md:relative
+          md:pt-5 md:w-4/5"
+        >
+          <a
+            href="/portfolio_1.2/"
+            className={`font-bold md:my-2 ${
+              theme === 'light' && onAbout
+                ? 'animatedBack active'
+                : theme === 'light' && !onAbout
+                ? 'animatedOut reverse'
+                : theme === 'dark' && onAbout
+                ? 'animatedBack2 active'
+                : theme === 'dark' && !onAbout
+                ? 'animatedOut2 reverse'
+                : ''
+            }`}
           >
-            <a
-              href="/portfolio_1.2/"
-              className={`font-bold md:my-2 ${
-                theme === 'light' && onAbout
-                  ? 'animatedBack active'
-                  : theme === 'light' && !onAbout
-                  ? 'animatedOut reverse'
-                  : theme === 'dark' && onAbout
-                  ? 'animatedBack2 active'
-                  : theme === 'dark' && !onAbout
-                  ? 'animatedOut2 reverse'
-                  : ''
+            <hr
+              className={`hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white ${
+                onAbout ? '' : ''
               }`}
-            >
-              <hr
-                className={`hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white ${
-                  onAbout ? '' : ''
-                }`}
-              />{' '}
-              Me{' '}
-            </a>
-            <a
-              href="#projects"
-              className={`font-bold md:my-2 ${
-                theme === 'light' && onProject
-                  ? 'animatedBack active'
-                  : theme === 'light' && !onProject
-                  ? 'animatedOut reverse'
-                  : theme === 'dark' && onProject
-                  ? 'animatedBack2 active'
-                  : theme === 'dark' && !onProject
-                  ? 'animatedOut2 reverse'
-                  : ''
-              }`}
-            >
-              <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-              Projects
-            </a>
-            <a
-              href="#skills"
-              className={`font-bold md:my-2 ${
-                theme === 'light' && onSkills
-                  ? 'animatedBack active'
-                  : theme === 'light' && !onSkills
-                  ? 'animatedOut reverse'
-                  : theme === 'dark' && onSkills
-                  ? 'animatedBack2 active'
-                  : theme === 'dark' && !onSkills
-                  ? 'animatedOut2 reverse'
-                  : ''
-              }`}
-            >
-              <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-              Skills
-            </a>
-            <a
-              href="#projects"
-              className={`font-bold md:my-2 ${
-                theme === 'light' && onContact
-                  ? 'animatedBack active'
-                  : theme === 'light' && !onContact
-                  ? 'animatedOut reverse'
-                  : theme === 'dark' && onContact
-                  ? 'animatedBack2 active'
-                  : theme === 'dark' && !onContact
-                  ? 'animatedOut2 reverse'
-                  : ''
-              }`}
-            >
-              <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-              Contact
-            </a>
-          </nav>
-
+            />{' '}
+            Me{' '}
+          </a>
+          <a
+            href="#projects"
+            className={`font-bold md:my-2 ${
+              theme === 'light' && onProject
+                ? 'animatedBack active'
+                : theme === 'light' && !onProject
+                ? 'animatedOut reverse'
+                : theme === 'dark' && onProject
+                ? 'animatedBack2 active'
+                : theme === 'dark' && !onProject
+                ? 'animatedOut2 reverse'
+                : ''
+            }`}
+          >
+            <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
+            Projects
+          </a>
+          <a
+            href="#skills"
+            className={`font-bold md:my-2 ${
+              theme === 'light' && onSkills
+                ? 'animatedBack active'
+                : theme === 'light' && !onSkills
+                ? 'animatedOut reverse'
+                : theme === 'dark' && onSkills
+                ? 'animatedBack2 active'
+                : theme === 'dark' && !onSkills
+                ? 'animatedOut2 reverse'
+                : ''
+            }`}
+          >
+            <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
+            Skills
+          </a>
+          <a
+            href="#contactForm"
+            className={`font-bold md:my-2 ${
+              theme === 'light' && onContact
+                ? 'animatedBack active'
+                : theme === 'light' && !onContact
+                ? 'animatedOut reverse'
+                : theme === 'dark' && onContact
+                ? 'animatedBack2 active'
+                : theme === 'dark' && !onContact
+                ? 'animatedOut2 reverse'
+                : ''
+            }`}
+          >
+            <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
+            Contact
+          </a>
+        </nav>
       </section>
+
       <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-6 md:bottom-0 md:right-auto bg-myGray rounded dark:bg-black dark:border dark:border-white"
       >
         <a
@@ -203,7 +204,7 @@ function Navigate() {
         </a>
         <a
           className="cursor-pointer hover:scale-110"
-          href="https://cesarherr.github.io/portfolio_1.2/"
+          href="https://github.com/CesarHerr"
           target="_blank"
           rel="noreferrer"
           aria-label="go to my github account"

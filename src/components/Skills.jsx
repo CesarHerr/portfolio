@@ -15,7 +15,7 @@ function Skills() {
 
   return (
     <section
-      className="h-screen md:ml-[20rem] xl:ml-[25rem] bg-myYellow dark:bg-transparent md:bg-transparent"
+      className="h-screen md:ml-[20rem] xl:ml-[25rem] bg-myYellow dark:bg-transparent md:bg-transparent overflow-hidden"
       id="skills"
     >
       <h2
