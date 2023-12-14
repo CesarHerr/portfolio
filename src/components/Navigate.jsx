@@ -102,7 +102,7 @@ function Navigate() {
           md:pt-5 md:w-4/5"
         >
           <a
-            href="/portfolio_1.2/"
+            href="/portfolio/"
             className={`font-bold md:my-2 ${
               theme === 'light' && onAbout
                 ? 'animatedBack active'

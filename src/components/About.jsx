@@ -8,10 +8,10 @@ function About() {
       md:ml-[20rem] xl:ml-[25rem] mb-24"
       id="about"
     >
-      <h3 className="w-10/12 text-left text-3xl lg:text-4xl mt-[20%] text-myBlue dark:text-myLightBlue">
+      <h3 className="w-10/12 text-left text-3xl lg:text-4xl xl:text-5xl mt-[20%] text-myBlue dark:text-myLightBlue">
         I&apos;m a Full Stack Developer
       </h3>
-      <p className="w-10/12 text-left text-xl ">
+      <p className="w-10/12 text-left text-xl xl:text-2xl">
         {' '}
         With a background in database administration, and technical support. In
         the last year I spent 1300+ hours studying and working in a remote
@@ -19,7 +19,7 @@ function About() {
         git-flow, and daily stand ups to communicate and collaborate with
         international remote developers.
       </p>
-      <div className="w-[220px] h-[260px] opacity-80 mt-26 relative lg:top-20 right-10">
+      <div className="w-[220px] h-[260px] opacity-80 mt-26 relative lg:top-5 right-10">
         <img
           src={images.post}
           alt="post-it"
