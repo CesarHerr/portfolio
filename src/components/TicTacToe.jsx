@@ -160,7 +160,7 @@ function TicTacToe() {
             </header>
             <footer>
               <button
-                className="mt-20 p-5 rounded cursor-pointer"
+                className="mt-20 p-5 rounded cursor-pointer bg-transparent"
                 onClick={resetGame}
               >
                 Start New Game
