@@ -37,7 +37,7 @@ function Navigate() {
   return (
     <aside
       className="flex flex-col w-full md:w-[20rem] xl:w-[25rem] items-start justify-center gap-5 
-      md:fixed h-screen bg-myYellow z-10 relative md:mx-auto dark:bg-slate-950 dark:text-white"
+      md:fixed h-screen bg-myYellow z-10 relative md:mx-auto dark:bg-slate-950 dark:text-white custom-opacity-nav"
     >
       <header
         className="flex justify-center items-center max-w-[400px] top-2 md:flex-col md:items-end 
@@ -46,7 +46,7 @@ function Navigate() {
         <button
           type="button"
           aria-label="dark mode"
-          className="top-10 right-5 sm:right-10 text-4xl dark:hidden absolute xl:fixed"
+          className="top-10 right-5 sm:right-10 text-4xl dark:hidden absolute"
           onClick={() => {
             handleClick();
           }}
@@ -56,7 +56,7 @@ function Navigate() {
         <button
           type="button"
           aria-label="dark mode"
-          className="top-10 right-5 sm:right-10 text-4xl hidden dark:inline absolute xl:fixed"
+          className="top-10 right-5 sm:right-10 text-4xl hidden dark:inline absolute"
           onClick={() => {
             handleClick();
           }}
