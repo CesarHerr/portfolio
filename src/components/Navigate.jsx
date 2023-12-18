@@ -43,6 +43,8 @@ function Navigate() {
         className="flex justify-center items-center max-w-[400px] top-2 md:flex-col md:items-end 
       gap-0 md:ml-10 w-full sm:w-auto"
       >
+        <img src={images.cloud} alt="cloud" className="absolute top-10 right-5 w-7 dark:hidden move-cloud"/>
+        <img src={images.cloud} alt="cloud" className="absolute top-10 right-16 w-7 z-10 dark:hidden move-cloud"/>
         <button
           type="button"
           aria-label="dark mode"
@@ -56,15 +58,15 @@ function Navigate() {
         <button
           type="button"
           aria-label="dark mode"
-          className="top-10 right-5 sm:right-10 text-4xl hidden dark:inline absolute"
+          className="top-8 right-5 sm:right-8 text-4xl hidden dark:inline absolute rounded-full bg-[#434650f6]  shadow-sun-shadow"
           onClick={() => {
             handleClick();
           }}
         >
-          😎
+          <img src={images.sun} alt="sun" className="w-14 move-sun" />
         </button>
         <div className="min-w-[250px] relative z-20">
-          <h1 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full animation">
+          <h1 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 animation">
             Hey There.
           </h1>
           <h2 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full">
@@ -102,7 +104,7 @@ function Navigate() {
           md:pt-5 md:w-4/5"
         >
           <a
-            href="/portfolio_1.2/"
+            href="/portfolio/"
             className={`font-bold md:my-2 ${
               theme === 'light' && onAbout
                 ? 'animatedBack active'
