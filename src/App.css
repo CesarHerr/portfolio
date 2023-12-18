@@ -4,7 +4,8 @@
   position: relative;
 }
 
-.custom-opacity, .custom-opacity-nav {
+.custom-opacity,
+.custom-opacity-nav {
   animation: opacityAnimation 2s ease-out;
 }
 
@@ -21,25 +22,29 @@
   animation: sun 10s linear infinite;
 }
 
-@keyframes cloud{
-  0%  { 
+@keyframes cloud {
+  0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-20%);
   }
+
   100% {
     transform: translate(0%);
   }
 }
 
 @keyframes sun {
-  0%  { 
+  0% {
     transform: rotate(0);
   }
+
   50% {
     transform: rotate(-40deg);
   }
+
   100% {
     transform: rotate(0);
   }
@@ -142,7 +147,7 @@
 }
 
 @media (min-width: 1280px) {
-  .custom-opacity-nav{
+  .custom-opacity-nav {
     animation: moveLeft 1s ease-in-out;
   }
 
