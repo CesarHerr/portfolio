@@ -12,6 +12,7 @@ export default {
       },
       boxShadow: {
         'myShadow': '8px 8px 0px 0px rgb(64, 64, 64)',
+        'sun-shadow': '0 0 50px #ccc',
       },
       fontFamily: {
         'dancing': ['Dancing Script', 'cursive'],
