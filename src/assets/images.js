@@ -20,8 +20,12 @@ import cat2 from './catP22.png';
 import tailBlack from './tailBlack.png';
 import catBlack from './catBlack.png';
 import pinNight from './pin2.png';
+import cloud from './nube.png';
+import sun from './sun.png';
 
 const images = {
+  sun,
+  cloud,
   pinNight,
   tailBlack,
   catBlack,
