@@ -43,8 +43,16 @@ function Navigate() {
         className="flex justify-center items-center max-w-[400px] top-2 md:flex-col md:items-end 
       gap-0 md:ml-10 w-full sm:w-auto"
       >
-        <img src={images.cloud} alt="cloud" className="absolute top-10 right-5 w-7 dark:hidden move-cloud"/>
-        <img src={images.cloud} alt="cloud" className="absolute top-10 right-16 w-7 z-10 dark:hidden move-cloud"/>
+        <img
+          src={images.cloud}
+          alt="cloud"
+          className="absolute top-10 right-5 w-7 dark:hidden move-cloud"
+        />
+        <img
+          src={images.cloud}
+          alt="cloud"
+          className="absolute top-10 right-16 w-7 z-10 dark:hidden move-cloud"
+        />
         <button
           type="button"
           aria-label="dark mode"
@@ -178,8 +186,7 @@ function Navigate() {
         </nav>
       </section>
 
-      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-6 md:bottom-0 md:right-auto bg-myGray rounded dark:bg-black dark:border dark:border-white"
-      >
+      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-6 md:bottom-0 md:right-auto bg-myGray rounded dark:bg-black dark:border dark:border-white">
         <a
           className="cursor-pointer hover:scale-110"
           href="https://twitter.com/Cesarherr2"
