@@ -14,9 +14,9 @@ function Popup() {
       image: img.rfad2,
       name: 'Rent for a day',
       description:
-      'This is a reservation-based application to rent a property/accommodation for a day.',
+        'This is a reservation-based application to rent a property/accommodation for a day.',
       description2: 'Full-stack app created with React and Rails.',
-      link: 'https://rent-for-a-day.onrender.com/api-docs/index.html',
+      link: 'https://rent-for-day-9756573c4a9e.herokuapp.com/api-docs',
       tech: [
         'Ruby on Rails',
         'Devise',
@@ -45,7 +45,7 @@ function Popup() {
         'Tailwind CSS',
         'HTML',
       ],
-      live: 'https://paid-up.up.railway.app/',
+      live: 'https://paid-ups-af6ec0783e54.herokuapp.com/',
       source: 'https://github.com/CesarHerr/budget_app',
     },
     {
@@ -62,7 +62,7 @@ function Popup() {
         'Bootstrap',
         'HTML',
       ],
-      live: 'https://the-best-recipe-app.up.railway.app/',
+      live: 'https://the-best-recipe-app-ever-434c46df89ee.herokuapp.com',
       source: 'https://github.com/CesarHerr/Recipe_App',
     },
     {
@@ -167,10 +167,19 @@ function Popup() {
                   {allProjects[project].description2}
                 </p>
                 {allProjects[project].link ? (
-                <p className="text-left sm:text-lg">
-                You can see the API documentation <a href={allProjects[project].link} className="font-extrabold" target="_blank" rel="noreferrer">here</a>
-                </p> ) : null }
-                </div>
+                  <p className="text-left sm:text-lg">
+                    You can see the API documentation{' '}
+                    <a
+                      href={allProjects[project].link}
+                      className="font-extrabold"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      here
+                    </a>
+                  </p>
+                ) : null}
+              </div>
               <div
                 className="my-5 lg:my-6 lg:absolute lg:bottom-2 flex justify-between xl:justify-end
               w-8/12 xl:w-11/12 mx-auto min-w-[250px] xl:gap-6"

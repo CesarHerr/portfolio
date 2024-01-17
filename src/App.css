@@ -4,27 +4,53 @@
   position: relative;
 }
 
-/* .leftSide {
-  right: 0;
-  width: 60%;
-} */
-
-/* & .light {
-    position:absolute;
-    right: 5rem;
-    width: 55%;
-    margin-top: 13rem;
-    border-left: 12rem solid transparent;
-    border-right: 9rem solid transparent;
-    border-bottom: 23rem solid rgba(255, 228, 196, 0.192);
-  } */
+.custom-opacity,
+.custom-opacity-nav {
+  animation: opacityAnimation 2s ease-out;
+}
 
 .popupCase {
-  animation: comeHereCase 0.4s ease-in-out;
+  animation: opacityAnimation 0.4s ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes comeHereCase {
+.move-cloud {
+  animation: cloud 5s linear infinite;
+}
+
+.move-sun {
+  animation: sun 10s linear infinite;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes sun {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-40deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes opacityAnimation {
   0% {
     opacity: 0;
   }
@@ -117,20 +143,14 @@
 }
 
 .titleAnimation {
-  animation: titleAnimation 1s ease-in-out;
-}
-
-@keyframes titleAnimation {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  animation: opacityAnimation 1.5s ease-in-out;
 }
 
 @media (min-width: 1280px) {
+  .custom-opacity-nav {
+    animation: moveLeft 1s ease-in-out;
+  }
+
   .animatedBack,
   .animatedOut {
     background-image:

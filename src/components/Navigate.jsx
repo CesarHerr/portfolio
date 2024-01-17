@@ -37,16 +37,26 @@ function Navigate() {
   return (
     <aside
       className="flex flex-col w-full md:w-[20rem] xl:w-[25rem] items-start justify-center gap-5 
-      md:fixed h-screen bg-myYellow z-10 relative md:mx-auto dark:bg-slate-950 dark:text-white"
+      md:fixed h-screen bg-myYellow z-10 relative md:mx-auto dark:bg-slate-950 dark:text-white custom-opacity-nav"
     >
       <header
         className="flex justify-center items-center max-w-[400px] top-2 md:flex-col md:items-end 
       gap-0 md:ml-10 w-full sm:w-auto"
       >
+        <img
+          src={images.cloud}
+          alt="cloud"
+          className="absolute top-10 right-5 w-7 dark:hidden move-cloud"
+        />
+        <img
+          src={images.cloud}
+          alt="cloud"
+          className="absolute top-10 right-16 w-7 z-10 dark:hidden move-cloud"
+        />
         <button
           type="button"
           aria-label="dark mode"
-          className="top-10 right-5 sm:right-10 text-4xl dark:hidden absolute xl:fixed"
+          className="top-10 right-5 sm:right-10 text-4xl dark:hidden absolute"
           onClick={() => {
             handleClick();
           }}
@@ -56,15 +66,15 @@ function Navigate() {
         <button
           type="button"
           aria-label="dark mode"
-          className="top-10 right-5 sm:right-10 text-4xl hidden dark:inline absolute xl:fixed"
+          className="top-8 right-5 sm:right-8 text-4xl hidden dark:inline absolute rounded-full bg-[#434650f6]  shadow-sun-shadow"
           onClick={() => {
             handleClick();
           }}
         >
-          😎
+          <img src={images.sun} alt="sun" className="w-14 move-sun" />
         </button>
         <div className="min-w-[250px] relative z-20">
-          <h1 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full animation">
+          <h1 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 animation">
             Hey There.
           </h1>
           <h2 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full">
@@ -176,8 +186,7 @@ function Navigate() {
         </nav>
       </section>
 
-      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-6 md:bottom-0 md:right-auto bg-myGray rounded dark:bg-black dark:border dark:border-white"
-      >
+      <footer className="flex md:w-full md:justify-center gap-4 p-1 md:py-2 fixed md:absolute bottom-2 right-6 md:bottom-0 md:right-auto bg-myGray rounded dark:bg-black dark:border dark:border-white">
         <a
           className="cursor-pointer hover:scale-110"
           href="https://twitter.com/Cesarherr2"

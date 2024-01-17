@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       className="h-screen relative hidden items-end gap-2 pr-4 md:flex flex-col xl:pr-20
-      md:ml-[20rem] xl:ml-[25rem] mb-24"
+      md:ml-[20rem] xl:ml-[25rem] mb-24 custom-opacity"
       id="about"
     >
       <h3 className="w-10/12 text-left text-3xl lg:text-4xl xl:text-5xl mt-[20%] text-myBlue dark:text-myLightBlue">
