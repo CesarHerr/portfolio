@@ -16,7 +16,7 @@ function Popup() {
       description:
         'This is a reservation-based application to rent a property/accommodation for a day.',
       description2: 'Full-stack app created with React and Rails.',
-      link: 'https://rent-for-a-day.onrender.com/api-docs/index.html',
+      link: 'https://rent-for-day-9756573c4a9e.herokuapp.com/api-docs',
       tech: [
         'Ruby on Rails',
         'Devise',
@@ -45,7 +45,7 @@ function Popup() {
         'Tailwind CSS',
         'HTML',
       ],
-      live: 'https://paid-up.up.railway.app/',
+      live: 'https://paid-ups-af6ec0783e54.herokuapp.com/',
       source: 'https://github.com/CesarHerr/budget_app',
     },
     {
@@ -62,7 +62,7 @@ function Popup() {
         'Bootstrap',
         'HTML',
       ],
-      live: 'https://the-best-recipe-app.up.railway.app/',
+      live: 'https://the-best-recipe-app-ever-434c46df89ee.herokuapp.com',
       source: 'https://github.com/CesarHerr/Recipe_App',
     },
     {
