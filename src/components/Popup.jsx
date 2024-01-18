@@ -45,7 +45,7 @@ function Popup() {
         'Tailwind CSS',
         'HTML',
       ],
-      live: 'https://paid-ups-af6ec0783e54.herokuapp.com/',
+      live: 'https://paid-ups.cesarherr.tech/',
       source: 'https://github.com/CesarHerr/budget_app',
     },
     {
@@ -62,7 +62,7 @@ function Popup() {
         'Bootstrap',
         'HTML',
       ],
-      live: 'https://the-best-recipe-app-ever-434c46df89ee.herokuapp.com',
+      live: 'https://recipe-app.cesarherr.tech/',
       source: 'https://github.com/CesarHerr/Recipe_App',
     },
     {
